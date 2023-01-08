@@ -61,75 +61,15 @@
             <div class="footer-container">
                 <div class="footer-content">
                     <p>&copy .:|:. John M Harper .:|:. Utah</p>
-                    <p style="color: #90EE90;">
-                        Last Updated
-                        <span id="date3"></span>
-                    </p>
+                    <p style="color: #90EE90;">Last Updated&nbsp;<span id="myDate"></span></p>
                 </div>
             </div>
         </section>
     </body>
     <script>
         // Select the HTML element to manipulate
-        const date1 = document.querySelector("#date1");
-        const date2 = document.querySelector("#date2");
-        const date3 = document.querySelector("#date3");
-        const message = document.querySelector("#emessage");
-        const options = {
-          weekday: "short",
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        };
-        
-        // Try to complete the method with options
-        try {
-            const options = {
-                weekday: "long",
-                day: "numeric",
-                month: "long",
-                year: "numeric"
-            };
-            
-            date1.innerHTML = `Today is <span class="highlight">${new Date().toLocaleDateString("en-UK", options)}</span>!`;
-            // what locale does mon dd, year? I think en-US. That would be a better way to format
-            // .replace(/^\S+\s/,'')
-            date3.innerHTML = `<span class="highlight">${new Date().toLocaleDateString("en-US", options).replace(/^\S+\s/,'')}</span>`;
-        } catch (e) {
-            console.log("Error with code or your browser does not support Locale");
-        }
-        
-        // Long hand method ... building day and month names from built-in date methods.
-        const daynames = [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-        ];
-        const months = [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"
-        ];
-        
-        const d = new Date();
-        const dayName = daynames[d.getDay()];
-        const monthName = months[d.getMonth()];
-        const year = d.getFullYear();
-        const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-        document.querySelector("#date2").textContent = fulldate;
+        const date = new Date(document.lastModified);
+        document.getElementById("myDate").innerHTML = date;
     </script>
 </html>
 
