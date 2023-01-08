@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app="myApp">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +10,59 @@
         <link rel="stylesheet" href="default-css/styles.css">
     </head>
     <body>
-        <section class="myBanner">
-            <img src="" alt="my ugly mug">
-            <h1>Johnster My Monster</h1> 
+        <section class="container-banner">
+            <div class="child1">
+                <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="my-parent-01">
+                <div class="left-container">
+                <div class="left-content">
+                  <img src="/default-images/johnster.svg">
+                </div>
+              </div>
+              <div class="right-container">
+                  <div class="right-content">
+                    <h1>John M. Harper</p>
+                  </div>
+              </div>
+            </div>
         </section>
-        <section></section>
-        <p>Hello, This is my CSS-230-03 Home Page</p>
-        <p>Professor: Katherine Campbell</p>
-        <p>Student: John M Harper</p>
         <section>
-        <h1>Exercise W01:Applied JavaScript</h1>
-        <a href="https://codepen.io/j79h110/pen/JjBbNLw">Exercise W01: Applied JavaScript (Format Dates with Locale)</a>
+            <table>
+                <tr>
+                    <th><h1 style="font-size: 32px; text-shadow: 2px 2px 3px rgb(0 0 0 / 0.4);">WDD 230-03: Assignment Portal</h1></th>
+                </tr>
+                <tr style="border">
+                    <th>
+                        <ul>
+                            <li>Lesson 02<a href="#">Title</a></li>
+                            <li>Lesson 03<a href="#">Title</a></li>
+                            <li>Lesson 04<a href="#">Title</a></li>
+                            <li>Lesson 05<a href="#">Title</a></li>
+                            <li>Lesson 06<a href="#">Title</a></li>
+                            <li>Lesson 07<a href="#">Title</a></li>
+                            <li>Lesson 08<a href="#">Title</a></li>
+                            <li>Lesson 09<a href="#">Title</a></li>
+                            <li>Lesson 10<a href="#">Title</a></li>
+                            <li>Lesson 11<a href="#">Title</a></li>
+                        </ul>
+                    </th>
+                </tr>
+            </table>
+            <p>Some lessons may need more than one activity/assignment link.</p>
+        </section>
+        <section class="my-parent-02">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <p>&copy .:|:. John M Harper .:|:. Utah</p>
+                    <p style="color: #90EE90;">Last Updated 01/07/2023 21:00</p>
+                </div>
+            </div>
         </section>
     </body>
 </html>

@@ -1,33 +1,6 @@
-*  {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
 }
 
 /* Style the content */
@@ -43,19 +16,180 @@ body {
   padding: 10px;
 }
 
-/* style the banner */
-.myBanner {
-  background-color: #0062B8;
-  grid-template-columns: repeat(4 256px);
+/* ****************************************************************************
+My Navigation
+**************************************************************************** */
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 1024px;
+  
+  list-style: none;
+  margin: 0; 
+  background: #0062B8;
 }
 
-.myBanner img {
-  filter: drop-shadow(0 0 0.75rem gray);
-  grid-column 1/2;
+.navigation a {
+  text-decoration: none;;
+  text-shadow: 1px 1px 2px black;
+  display: block;
+  padding: 1em;
+  color: white;
 }
 
-.myBanner h1 {
-  grid-column: 2/4;
-  text-shadow: 1px 1px 2px 2px gray;
-  font-family: Arial, Helvetica, sans-serif;
+.navigation a:hover {
+  background: lightblue;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+/* ****************************************************************************
+My Mug 
+why did 1024 not match... todo: fix it.
+**************************************************************************** */
+.my-parent-01 {
+  width: 1064px;
+  height: 21vw;
+  margin-bottom: 30px; 
+}
+
+.left-container {
+  float: left;
+  height: 21vw;
+  width: 50%;
+  background: #0062B8;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 21vw;
+  background: #0062B8;
+  width: 50%;
+  float: left;
+}
+
+.left-content {
+  width: 100%;
+  height: 256px;
+}
+
+.left-content img {
+  width: 220px;
+  height: 220px;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.right-content {
+  max-width: 70%;
+}
+
+.right-content h1 {
+  color: white;
+  font-size: 32px;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  text-align: left;;
+}
+
+@media screen and (max-width: 1024px) {
+  .my-parent-01 {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto 60px auto;
+  }
+  .left-container  {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: none;
+    text-align: center;
+    margin: 15px auto 0px auto;
+  }
+  .right-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: none;
+    text-align: center;
+    margin: 15px auto 0px auto;
+  }
+  .left-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: none;
+    text-align: center;
+    margin: 15px auto 0px auto;
+  }
+  .right-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: none;
+    text-align: center;
+    margin: 15px auto 0px auto; max-width: 90%;
+  }
+}
+/* ****************************************************************************
+My Assignment List
+**************************************************************************** */
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1pt solid black;
+  text-align:  left;
+}
+/* ****************************************************************************
+My Footer
+**************************************************************************** */
+.my-parent-02 {
+  width: 1064px;
+  height: 18vw;
+  margin-bottom: 30px;
+  background: #0062B8;
+}
+
+.footer-container {
+  height: 175px;
+  width: 50%;
+  background: #0062B8;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 100%;
+}
+
+.footer-content p {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
