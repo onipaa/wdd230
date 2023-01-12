@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&family=Roboto&family=Zilla+Slab&display=swap');
+
+/*
+font-family: 'Newsreader', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Zilla Slab', serif;
+*/
+
+#container {
+    grid-template-columns: 256px 768px;
+    grid-template-rows: 256px 512px 256px;
+    max-width: 1024px;
+}
+
+.container h1 {
+    text-align: left;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
