@@ -1,199 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&family=Roboto&family=Zilla+Slab&display=swap');
+
+/*
+font-family: 'Newsreader', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Zilla Slab', serif;
+*/
+
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    max-width: 1024px;
 }
 
-/* Style the content */
-.content {
-  background-color: #ddd;
-  padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
+#container {
+    display: grid;
+    grid-template-columns: repeat ( 8, 128px );
+    grid-template-rows: repeat ( 10, 128px );
+}
+  /* ****************************************************************************
+  My Banner
+  **************************************************************************** */
+.banner {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 1/2;
+    background-color: #0062B8;
+    border-radius: 25px;
+    z-index: 0;
+    /* grid-template-columns: subgrid; dang it... only works in firefox */
 }
 
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
+.banner .myMug {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 256px;
+    height: 256px;
+    z-index: 1;
 }
 
-/* ****************************************************************************
-My Navigation
-**************************************************************************** */
-.navigation {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  width: 1024px;
-  
-  list-style: none;
-  margin: 0; 
-  background: #0062B8;
+.myMug img {
+    width: 220px;
+    height: 220px;
+    justify-self: center;
+    align-self: center;
+    filter: drop-shadow(0 0 0.75rem rgb(254, 254, 211));
 }
 
-.navigation a {
-  text-decoration: none;;
-  text-shadow: 1px 1px 2px black;
-  display: block;
-  padding: 1em;
-  color: white;
+.banner .myName {
+    display: grid;
+    grid-column: 3/9;
+    grid-row: 1/2;
 }
 
-.navigation a:hover {
-  background: lightblue;
+.banner .myName p {
+    display: grid;
+    text-align: left;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    align-self: center;
+    justify-self: left;
+    z-index: 99;
+    text-shadow: 1px 1px 2px black;
 }
 
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .navigation {
-    flex-flow: column wrap;
-    padding: 0;
-  }
-  .navigation a { 
-    text-align: center; 
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255,0.3); 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-
-  }
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
-}
-/* ****************************************************************************
-My Mug 
-why did 1024 not match... todo: fix it.
-**************************************************************************** */
-.my-parent-01 {
-  width: 1064px;
-  height: 21vw;
-  margin-bottom: 30px; 
-}
-
-.left-container {
-  float: left;
-  height: 21vw;
-  width: 50%;
-  background: #0062B8;
-}
-
-.right-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 21vw;
-  background: #0062B8;
-  width: 50%;
-  float: left;
-}
-
-.left-content {
-  width: 100%;
-  height: 256px;
-}
-
-.left-content img {
-  width: 220px;
-  height: 220px;
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-}
-
-.right-content {
-  max-width: 70%;
-}
-
-.right-content h1 {
-  color: white;
-  font-size: 32px;
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-  text-align: left;;
-}
-
-@media screen and (max-width: 1024px) {
-  .my-parent-01 {
-    display: block;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin: 0 auto 60px auto;
-  }
-  .left-container  {
-    display: block;
-    width: 100%;
-    height: auto;
-    float: none;
-    text-align: center;
-    margin: 15px auto 0px auto;
-  }
-  .right-container {
-    display: block;
-    width: 100%;
-    height: auto;
-    float: none;
-    text-align: center;
-    margin: 15px auto 0px auto;
-  }
-  .left-content {
-    display: block;
-    width: 100%;
-    height: auto;
-    float: none;
-    text-align: center;
-    margin: 15px auto 0px auto;
-  }
-  .right-content {
-    display: block;
-    width: 100%;
-    height: auto;
-    float: none;
-    text-align: center;
-    margin: 15px auto 0px auto; max-width: 90%;
-  }
-}
 /* ****************************************************************************
 My Assignment List
 **************************************************************************** */
 .exercises {
-  width: 100%;
-}
+    grid-column: 1/9;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  tr {
+    border-bottom: 1pt solid black;
+    text-align:  left;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* ****************************************************************************
+  My Footer
+  **************************************************************************** */ 
+  .footer-container {
+    grid-column: 1/9;
+    grid-row: 4/6;
+    height: 128px;
+    background: #0062B8;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+  }
+  
+  .footer-content {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .footer-content h2 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
 
-table {
-  border-collapse: collapse;
-}
-
-tr {
-  border-bottom: 1pt solid black;
-  text-align:  left;
-}
-/* ****************************************************************************
-My Footer
-**************************************************************************** */
-.my-parent-02 {
-  width: 1064px;
-  height: 18vw;
-  margin-bottom: 30px;
-  background: #0062B8;
-}
-
-.footer-container {
-  height: 175px;
-  width: 50%;
-  background: #0062B8;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-content {
-  width: 100%;
-}
-
-.footer-content h2 {
-  color: white;
-  text-align: center;
-  font-size: 24px;
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-}
+  .footer-content p {
+    color: #CCFF00;
+    text-align: center;
+  }
