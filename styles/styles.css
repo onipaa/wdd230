@@ -25,7 +25,7 @@ body {
     background-color: #0062B8;
     border-radius: 25px;
     z-index: 0;
-    box-shadow: 0 10px 10px #012567;
+    box-shadow: 0 5px 5px #012567;
 }
 
 .banner .myMug {
@@ -91,7 +91,7 @@ My Assignment List
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    box-shadow: 0 10px 10px #012567;
+    box-shadow: 0 5px 5px #012567;
   }
   
   .footer-content {
