@@ -25,7 +25,7 @@ body {
     background-color: #0062B8;
     border-radius: 25px;
     z-index: 0;
-    box-shadow: inset 0 0 10px #012567;
+    box-shadow: 0 0 10px #012567;
 }
 
 .banner .myMug {
@@ -92,7 +92,7 @@ My Assignment List
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    box-shadow: inset 0 0 10px #012567;
+    box-shadow: 0 0 10px #012567;
   }
   
   .footer-content {
@@ -104,7 +104,7 @@ My Assignment List
     color: white;
     text-align: center;
     font-size: 24px;
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    filter: drop-shadow ( 3px 5px 2px #012567);
   }
 
   .footer-content p {
