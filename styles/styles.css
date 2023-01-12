@@ -1,23 +1,23 @@
+/* ****************************************************************************
+  My imports and top level schtuff
+**************************************************************************** */
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&family=Roboto&family=Zilla+Slab&display=swap');
-
 /*
 font-family: 'Newsreader', serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Zilla Slab', serif;
 */
-
 body {
     max-width: 1024px;
 }
-
 #container {
     display: grid;
     grid-template-columns: repeat ( 8, 128px );
     grid-template-rows: repeat ( 10, 128px );
 }
-  /* ****************************************************************************
+/* ****************************************************************************
   My Banner
-  **************************************************************************** */
+**************************************************************************** */
 .banner {
     display: grid;
     grid-column: 1/9;
@@ -62,7 +62,6 @@ body {
     z-index: 99;
     text-shadow: 1px 1px 2px black;
 }
-
 /* ****************************************************************************
 My Assignment List
 **************************************************************************** */
