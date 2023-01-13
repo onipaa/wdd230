@@ -4,12 +4,18 @@
     }
 
     .banner {
+        width: 512px;
         border-radius: 10px;
     }
 
     .banner .myMug {
         width: 128px;
         height: 128px;
+    }
+
+    .myMug img {
+        width: 100px;
+        height: 100px;
     }
 
     .banner .myName p {
