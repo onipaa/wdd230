@@ -1,0 +1,22 @@
+@media only screen and (min-width: 15em) {
+    body {
+        max-width: 256px;
+    }
+
+    .banner {
+        border-radius: 5px;
+    }
+
+    .banner .myMug {
+        width: 64px;
+        height: 64px;
+    }
+
+    .banner .myName p {
+        font-size: 8px;
+    }
+
+    .footer-container {
+        height: 32px;
+    }
+}
