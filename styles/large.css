@@ -103,10 +103,12 @@ My Assignment List
     color: white;
     text-align: center;
     font-size: 24px;
+    font-family: 'Roboto';
     filter: drop-shadow ( 3px 5px 2px #012567);
   }
 
   .footer-content p {
+    font-family: 'Roboto';
     color: #CCFF00;
     text-align: center;
   }
