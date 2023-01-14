@@ -51,7 +51,7 @@ body {
     grid-row: 1/2;
 }
 
-.banner .myName p {
+.banner .myName h1 {
     display: grid;
     text-align: left;
     color: white;
@@ -99,7 +99,7 @@ My Assignment List
     width: 100%;
   }
   
-  .footer-content h2 {
+  .footer-content h1 {
     color: white;
     text-align: center;
     font-size: 24px;
