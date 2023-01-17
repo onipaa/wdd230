@@ -47,7 +47,7 @@
         <footer>
             <div class="footer-container">
                 <div class="footer-content">
-                    <h1 style="text-align: center;">&copy; .:|:. John M Harper .:|:. Utah</h1>
+                    <h1 style="text-align: center;">&copy; <span id="myYear"></span> .:|:. John M Harper .:|:. Utah</h1>
                     <p>Last Updated&nbsp;<span id="myDate"></span></p>
                 </div>
             </div>
@@ -55,7 +55,11 @@
         <script>
             // Select the HTML element to manipulate
             const date = new Date(document.lastModified);
+            const year = date.getFullYear();
+            
+
             document.getElementById("myDate").innerHTML = date;
+            document.getElementById("myYear").innerHTML = year;
         </script>    
     </body>
 </html>
