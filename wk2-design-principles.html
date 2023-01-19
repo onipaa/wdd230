@@ -18,31 +18,46 @@
                 </div>
                 <div class="myName"><h1>John M. Harper</h1></div>
             </div>
-            <div class="exercises">
-                <p>&nbsp;</p>
-                <div class="alignment">
-                    <p>Alignment</p>
-                    <a href="https://www.bigdropinc.com/">Big Drop</a>
-                    <p>&nbsp;</p>
-                    <img src="images/alignment.jpg" alt="alignment example">
-                    <p style="text-align: justify;">Big Drop Inc is a New York web design company. It is considered one of the top web design companies in the world. It's use of alignment on its index page is a great example of the PARC: Alignment principle.</p>
+        </div>
+        <div class="principles-container">
+                <div class="polaroid1">
+                    <h3>Alignment</h3>
+                    <img src="images/alignment.jpg" alt="Big Drop">
+                    <p>
+                        <a href="https://www.bigdropinc.com/latest-work" alt="bigdrop latest">Big Drop</a>
+                        <br>
+                        <br>
+                            Bigdrop, a five-star digital design/marketing company, is based in New York. Its 100+ artists create some of the most stunning web designs globally. Their home page uses <span style="font-style: italic;">Alignment</span> to display its major project work.  
+                    </p>
                 </div>
-                <div class="contrast"><img src="images/contrast.jpg" alt="contrast example"></div>
-                <div class="proximity"><img src="images/proximity.jpg" alt="proximity example"></div>
+                <div class="polaroid2">
+                    <h3>Contrast</h3>
+                    <img src="images/contrast.jpg" alt="Ruckus Marketing">
+                    <p>
+                        <a href="https://www.ruckusmarketing.com/" alt="Ruckusmarketing">Ruckus Marketing</a>
+                        <br>
+                        <br>
+                            Ruckus Marketing is another top digital design/marketing company based in New York. It uses <span style="font-style: italic;">Contrast</span> and hero images to create a stunning web presence.
+                    </p>
+                </div>
+                <div class="polaroid3">
+                    <h3>Proximity</h3>
+                    <img src="images/proximity.jpg" alt="The Globe and Mail">
+                    <p>
+                        <a href="https://www.theglobeandmail.com/" alt="The Globe and Mail">The Globe and Mail</a>
+                        <br>
+                        <br>
+                        The Globe and Mail is a Canadian-based news company. You would expect a company like this to have a site like this: compared to KSL, FoxNews, and many others. Fortunately, this news company values design enough to care about principles like Proximity.
+                    </p>
+                </div>
             </div>
         </div>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-content">
-                    <h1 style="text-align: center;">&copy; .:|:. John M Harper .:|:. Utah</h1>
-                    <p>Last Updated&nbsp;<span id="myDate"></span></p>
-                </div>
+        <footer class="footer-container">
+            <div class="footer-content">
+                <h1 style="text-align: center;">&copy; <span id="myYear"></span> .:|:. John M Harper .:|:. Utah</h1>
+                <p>Last Updated&nbsp;<span id="myDate"></span></p>
             </div>
         </footer>
-        <script>
-            // Select the HTML element to manipulate
-            const date = new Date(document.lastModified);
-            document.getElementById("myDate").innerHTML = date;
-        </script>    
+        <script src="scripts/dates.js"></script>
     </body>
 </html>
