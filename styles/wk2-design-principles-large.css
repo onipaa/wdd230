@@ -80,7 +80,7 @@ My Assignment List
     width: 1024px;
     margin-top: 10px;
     grid-template-columns: repeat ( 5, 256px);
-    grid-template-rows: repeat ( 1, 1024px);
+    grid-template-rows: repeat ( 10, 128px);
   }
 
 .principles-container .polaroid1 {
@@ -102,6 +102,11 @@ My Assignment List
   position: relative;
   align-items: center;
   justify-items: center;
+}
+
+.principles-container .polaroid1 h3 {
+  display: block;
+  font-size: 24px;
 }
 
 .principles-container .polaroid1 img {
@@ -143,6 +148,12 @@ My Assignment List
   justify-items: center;
 }
 
+.principles-container .polaroid2 h3 {
+  display: block;
+  font-size: 24px;
+}
+
+
 .principles-container .polaroid2 img {
   display: block;
   width: auto;
@@ -159,11 +170,6 @@ My Assignment List
 .principles-container .polaroid2 p {
   padding: 16px;
   text-align: left;
-}
-
-
-.principles-container .polaroid2 a {
-  padding: 16px;
 }
 
 .principles-container .polaroid2 p {
@@ -191,6 +197,12 @@ My Assignment List
   align-items: center;
   justify-items: center;
 }
+
+.principles-container .polaroid3 h3 {
+    display: block;
+    font-size: 24px;
+}
+  
 
 .principles-container .polaroid3 img {
   display: block;
