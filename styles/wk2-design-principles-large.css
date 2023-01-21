@@ -50,6 +50,12 @@ body {
     display: grid;
     grid-column: 5/17;
     grid-row: 1/5;
+    justify-content: left;
+    align-content: center;
+}
+
+.banner .myName a {
+    text-decoration: none;
 }
 
 .banner .myName h1 {

@@ -9,6 +9,7 @@ font-family: 'Zilla Slab', serif;
 */
 body {
     max-width: 1024px;
+    margin: auto;
 }
 #container {
     display: grid;
@@ -45,10 +46,16 @@ body {
     filter: drop-shadow(0 0 0.75rem rgb(254, 254, 211));
 }
 
+.banner .myName a {
+    text-decoration: none;
+}
+
 .banner .myName {
     display: grid;
     grid-column: 3/9;
     grid-row: 1/2;
+    justify-content: left;
+    align-content: center;
 }
 
 .banner .myName h1 {
