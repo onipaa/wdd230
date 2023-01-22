@@ -8,248 +8,130 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Zilla Slab', serif;
 */
 body {
-    max-width: 1024px;
+    display: grid;
+    width: 1280px;
     margin: auto;
+    grid-template-columns: repeat ( 40, 32px );
+    grid-template-rows: repeat ( 80, 32px );
 }
 #container {
     display: grid;
-    grid-template-columns: repeat ( 16, 64px );
-    grid-template-rows: repeat ( 5, 64px );
 }
 /* ****************************************************************************
-  My Banner
+My Banner
 **************************************************************************** */
 .banner {
-    display: grid;
-    grid-column: 1/17;
-    grid-row: 1/5;
-    background-color: #0062B8;
-    border-radius: 25px;
-    z-index: 0;
-    box-shadow: 0 5px 5px #012567;
+  display: grid;
+  grid-column: 1/41;
+  grid-row: 1/9;
+  background-color: #0062B8;
+  border-radius: 25px;
+  z-index: 0;
+  box-shadow: 0 5px 5px #012567;
 }
 
 .banner .myMug {
-    display: grid;
-    grid-column: 1/5;
-    grid-row: 1/5;
-    width: 256px;
-    height: 256px;
-    z-index: 1;
+  display: grid;
+  grid-column: 1/9;
+  grid-row: 1/9;
+  width: 256px;
+  height: 256px;
+  z-index: 1;
 }
 
 .myMug img {
-    width: 220px;
-    height: 220px;
-    justify-self: center;
-    align-self: center;
-    filter: drop-shadow(0 0 0.75rem rgb(254, 254, 211));
+  width: 220px;
+  height: 220px;
+  justify-self: center;
+  align-self: center;
+  filter: drop-shadow(0 0 0.75rem rgb(254, 254, 211));
 }
 
 .banner .myName {
-    display: grid;
-    grid-column: 5/17;
-    grid-row: 1/5;
-    justify-content: left;
-    align-content: center;
+  display: grid;
+  grid-column: 9/41;
+  grid-row: 1/9;
+  justify-content: left;
+  align-content: center;
 }
 
 .banner .myName a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .banner .myName h1 {
-    display: grid;
-    text-align: left;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 64px;
-    align-self: center;
-    justify-self: left;
-    z-index: 99;
-    text-shadow: 1px 1px 2px black;
+  display: grid;
+  text-align: left;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 64px;
+  align-self: center;
+  justify-self: left;
+  z-index: 99;
+  text-shadow: 1px 1px 2px black;
 }
 /* ****************************************************************************
-My Assignment List
-  - alignment
-  - contrast
-  - proximity
+Principles
 **************************************************************************** */
-.principles-container {
-    display: grid;
-    width: 1024px;
-    margin-top: 10px;
-    grid-template-columns: repeat ( 5, 256px);
-    grid-template-rows: repeat ( 10, 128px);
-  }
+.polaroid1-header {
+  display:grid;
+  grid-column: 1/13;
+  grid-row: 11/13;
+  width: 384px;
+  height: 64px;
+  background-color:black;
+  text-align: center;;
+  color: white;
+  text-shadow: #012567;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: 16px;
+}
 
-.principles-container .polaroid1 {
-  width: 300px;
-  height: 1280px;
-  background: #ffffff;
+.polaroid1-img-container {
   display: grid;
-  grid-column: 1/2;
-  margin: 16px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  -webkit-transition: all .20s linear;
-  -moz-transition: all .20s linear;
-  transition: all .20s linear;
-  z-index: 0;
-  position: relative;
-  align-items: center;
-  justify-items: center;
+  grid-column: 1/13;
+  grid-row: 13/49;
+  width: 384px;
+  height: 1088px;
+  background-color: #DEE1E6;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.principles-container .polaroid1 h3 {
-  display: block;
-  font-size: 24px;
+.polaroid1-img-container img {
+  width: 320px;
+  height: 1088px;
+  border: 1px solid black;
 }
 
-.principles-container .polaroid1 img {
-  display: block;
-  width: auto;
-  height: 916px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 16px;
-}
-
-.principles-container .polaroid1 a {
-  padding: 16px;
-}
-
-.principles-container .polaroid1 p {
-  padding: 16px;
-  text-align: center;
-}
-
-.principles-container .polaroid2 {
-  width: 300px;
-  height: 1280px;
-  background: #ffffff;
+.polaroid1-footer-hyper {
   display: grid;
-  grid-column: 2/3;
-  margin: 16px;
+  grid-column: 1/13;
+  grid-row: 49/53;
+  width: 384px;
+  height: 512px;
+}
+
+.polaroid1-footer-hyper h3 {
+  color: black;
+  background-color: #DEE1E6;
   text-align: center;
-  text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  -webkit-transition: all .20s linear;
-  -moz-transition: all .20s linear;
-  transition: all .20s linear;
-  z-index: 0;
-  position: relative;
-  align-items: center;
-  justify-items: center;
+  width: 384px;
+  height: 32px;
 }
 
-.principles-container .polaroid2 h3 {
-  display: block;
-  font-size: 24px;
+.polaroid1-footer-hyper a {
+  text-decoration: none;  
 }
 
-
-.principles-container .polaroid2 img {
-  display: block;
-  width: auto;
-  height: 916px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 16px;
+/* why no workie */
+.polaroid1-footer-hyper p {
+  color: black;
+  width: 384px;
+  background-color: #DEE1E6;
+  border: 1px solid #000;
+  overflow-wrap: break-word;
+  white-space: wrap;
 }
-
-.principles-container .polaroid2 a {
-  padding: 16px;
-}
-
-.principles-container .polaroid2 p {
-  padding: 16px;
-  text-align: left;
-}
-
-.principles-container .polaroid2 p {
-  padding: 16px;
-  text-align: center;
-}
-
-.principles-container .polaroid3 {
-  width: 300px;
-  height: 1280px;
-  background: #ffffff;
-  display: grid;
-  grid-column: 3/4;
-  margin: 16px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-  -webkit-transition: all .20s linear;
-  -moz-transition: all .20s linear;
-  transition: all .20s linear;
-  z-index: 0;
-  position: relative;
-  align-items: center;
-  justify-items: center;
-}
-
-.principles-container .polaroid3 h3 {
-    display: block;
-    font-size: 24px;
-}
-  
-
-.principles-container .polaroid3 img {
-  display: block;
-  width: auto;
-  height: 916px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 16px;
-}
-
-.principles-container .polaroid3 a {
-  padding: 16px;
-}
-
-.principles-container .polaroid3 p {
-  padding: 16px;
-  text-align: center;
-}
-  /* ****************************************************************************
-  My Footer
-  **************************************************************************** */ 
-  .footer-container {
-    height: 128px;
-    background: #0062B8;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-    box-shadow: 0 5px 5px #012567;
-    grid-template-columns: repeat ( 16, 64px );
-    grid-template-rows: repeat ( 5, 64px );
-  }
-  
-  .footer-content {
-    padding: 10px;
-    width: 100%;
-  }
-  
-  .footer-content h1 {
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Roboto';
-    filter: drop-shadow ( 3px 5px 2px #012567);
-  }
-
-  .footer-content p {
-    font-family: 'Roboto';
-    color: #CCFF00;
-    text-align: center;
-  }

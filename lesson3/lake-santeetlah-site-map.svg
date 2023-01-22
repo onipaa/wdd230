@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="402.333" height="471.333" viewBox="0, 0, 402.333, 471.333">
+  <defs>
+    <clipPath id="Clip_1">
+      <path d="M71,196.333 L183,196.333 L183,267.667 L71,267.667 z M177,204.333 L77,204.333 L77,259.667 L177,259.667 L177,204.333 z"/>
+    </clipPath>
+    <filter id="Shadow_2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_3">
+      <path d="M271.333,277.867 L475.333,277.867 L475.333,349.2 L271.333,349.2 z M469.333,285.867 L277.333,285.867 L277.333,341.2 L469.333,341.2 L469.333,285.867 z"/>
+    </clipPath>
+    <filter id="Shadow_4">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_5">
+      <path d="M271.333,359.4 L475.333,359.4 L475.333,430.733 L271.333,430.733 z M469.333,367.4 L277.333,367.4 L277.333,422.733 L469.333,422.733 L469.333,367.4 z"/>
+    </clipPath>
+    <filter id="Shadow_6">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_7">
+      <path d="M270,440.933 L474,440.933 L474,512.267 L270,512.267 z M468,448.933 L276,448.933 L276,504.267 L468,504.267 L468,448.933 z"/>
+    </clipPath>
+    <filter id="Shadow_8">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_9">
+      <path d="M271.333,522.467 L475.333,522.467 L475.333,593.8 L271.333,593.8 z M469.333,530.467 L277.333,530.467 L277.333,585.8 L469.333,585.8 L469.333,530.467 z"/>
+    </clipPath>
+    <filter id="Shadow_10">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_11">
+      <path d="M271.333,600.333 L475.333,600.333 L475.333,671.667 L271.333,671.667 z M469.333,608.333 L277.333,608.333 L277.333,663.667 L469.333,663.667 L469.333,608.333 z"/>
+    </clipPath>
+    <filter id="Shadow_12">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_13">
+      <path d="M271.333,196.333 L475.333,196.333 L475.333,267.667 L271.333,267.667 z M469.333,204.333 L277.333,204.333 L277.333,259.667 L469.333,259.667 L469.333,204.333 z"/>
+    </clipPath>
+    <filter id="Shadow_14">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_15">
+      <path d="M162,217 L234.5,217 L234.5,240 L162,240 z M175,225 L174.5,225 L168,225 L168,232 L168.5,232 L174.5,232 L175,232 L175,229 L228.5,229 L228.5,228 L175,228 L175,225 z"/>
+    </clipPath>
+    <filter id="Shadow_16">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_17">
+      <path d="M219,220 L238,220 L238,644.5 L219,644.5 z M229,235 L232,235 L232,234.5 L232,228.5 L232,228 L231.5,228 L225.5,228 L225,228 L225,228.5 L225,234.5 L225,235 L228,235 L228,636.5 L229,636.5 L229,235 z"/>
+    </clipPath>
+    <filter id="Shadow_18">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_19">
+      <path d="M222.5,625 L295,625 L295,648 L222.5,648 z M289,633 L282,633 L282,636 L228.5,636 L228.5,637 L282,637 L282,640 L289,640 L289,633 z"/>
+    </clipPath>
+    <filter id="Shadow_20">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_21">
+      <path d="M222.5,547.133 L295,547.133 L295,570.133 L222.5,570.133 z M289,555.133 L282,555.133 L282,558.133 L228.5,558.133 L228.5,559.133 L282,559.133 L282,562.133 L289,562.133 L289,555.133 z"/>
+    </clipPath>
+    <filter id="Shadow_22">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_23">
+      <path d="M222.5,469 L295,469 L295,492 L222.5,492 z M289,477 L282,477 L282,480 L228.5,480 L228.5,481 L282,481 L282,484 L289,484 L289,477 z"/>
+    </clipPath>
+    <filter id="Shadow_24">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_25">
+      <path d="M222.5,385 L295,385 L295,408 L222.5,408 z M289,393 L282,393 L282,396 L228.5,396 L228.5,397 L282,397 L282,400 L289,400 L289,393 z"/>
+    </clipPath>
+    <filter id="Shadow_26">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_27">
+      <path d="M222.5,301 L295,301 L295,324 L222.5,324 z M289,309 L282,309 L282,312 L228.5,312 L228.5,313 L282,313 L282,316 L289,316 L289,309 z"/>
+    </clipPath>
+    <filter id="Shadow_28">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <clipPath id="Clip_29">
+      <path d="M222.5,217 L295,217 L295,240 L222.5,240 z M289,225 L282,225 L282,228 L228.5,228 L228.5,229 L282,229 L282,232 L289,232 L289,225 z"/>
+    </clipPath>
+    <filter id="Shadow_30">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+  </defs>
+  <g id="Layer_1" transform="translate(-72, -199.333)">
+    <g>
+      <g>
+        <path d="M177,204.333 L177,259.667 L77,259.667 L77,204.333 L177,204.333 z" clip-path="url(#Clip_1)" filter="url(#Shadow_2)" fill="rgba(0,0,0,0.75)"/>
+        <path d="M77,204.333 L177,204.333 L177,259.667 L77,259.667 L77,204.333 z" fill="#006CAA"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 127, 232)">
+        <tspan x="-28.805" y="8.5" font-family="Monaco" font-size="24" fill="#FFFFFE">HOME</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <path d="M469.333,285.867 L469.333,341.2 L277.333,341.2 L277.333,285.867 L469.333,285.867 z" clip-path="url(#Clip_3)" filter="url(#Shadow_4)" fill="rgba(0,0,0,0.75)"/>
+        <path d="M277.333,285.867 L469.333,285.867 L469.333,341.2 L277.333,341.2 L277.333,285.867 z" fill="#00CB83"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 373.333, 313.533)">
+        <tspan x="-75.612" y="3.5" font-family="Monaco" font-size="14" fill="#FFFFFE">Chamber of Comerce</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <path d="M469.333,367.4 L469.333,422.733 L277.333,422.733 L277.333,367.4 L469.333,367.4 z" clip-path="url(#Clip_5)" filter="url(#Shadow_6)" fill="rgba(0,0,0,0.75)"/>
+        <path d="M277.333,367.4 L469.333,367.4 L469.333,422.733 L277.333,422.733 L277.333,367.4 z" fill="#00CB83"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 373.333, 395.067)">
+        <tspan x="-58.81" y="-10.5" font-family="Monaco" font-size="14" fill="#FFFFFE">Local Business</tspan>
+        <tspan x="-21.003" y="8.5" font-family="Monaco" font-size="14" fill="#FFFFFE">Pages</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <path d="M468,448.933 L468,504.267 L276,504.267 L276,448.933 L468,448.933 z" clip-path="url(#Clip_7)" filter="url(#Shadow_8)" fill="rgba(0,0,0,0.75)"/>
+        <path d="M276,448.933 L468,448.933 L468,504.267 L276,504.267 L276,448.933 z" fill="#F42300"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 372, 476.6)">
+        <tspan x="-37.806" y="-10.5" font-family="Monaco" font-size="14" fill="#FFFFFE">Emergency</tspan>
+        <tspan x="-33.605" y="8.5" font-family="Monaco" font-size="14" fill="#FFFFFE">Services</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <path d="M469.333,530.467 L469.333,585.8 L277.333,585.8 L277.333,530.467 L469.333,530.467 z" clip-path="url(#Clip_9)" filter="url(#Shadow_10)" fill="rgba(0,0,0,0.75)"/>
+        <path d="M277.333,530.467 L469.333,530.467 L469.333,585.8 L277.333,585.8 L277.333,530.467 z" fill="#0085CF"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 373.333, 558.133)">
+        <tspan x="-33.605" y="-10.5" font-family="Monaco" font-size="14" fill="#FFFFFE">Discover</tspan>
+        <tspan x="-63.01" y="8.5" font-family="Monaco" font-size="14" fill="#FFFFFE">Lake Santeetlah</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <path d="M469.333,608.333 L469.333,663.667 L277.333,663.667 L277.333,608.333 L469.333,608.333 z" clip-path="url(#Clip_11)" filter="url(#Shadow_12)" fill="rgba(0,0,0,0.75)"/>
+        <path d="M277.333,608.333 L469.333,608.333 L469.333,663.667 L277.333,663.667 L277.333,608.333 z" fill="#0085CF"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 373.333, 636)">
+        <tspan x="-67.211" y="4.5" font-family="Monaco" font-size="14" fill="#FFFFFE">Lodging &amp; Dining</tspan>
+      </text>
+    </g>
+    <g>
+      <g>
+        <path d="M469.333,204.333 L469.333,259.667 L277.333,259.667 L277.333,204.333 L469.333,204.333 z" clip-path="url(#Clip_13)" filter="url(#Shadow_14)" fill="rgba(0,0,0,0.75)"/>
+        <path d="M277.333,204.333 L469.333,204.333 L469.333,259.667 L277.333,259.667 L277.333,204.333 z" fill="#00CB83"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 373.333, 232)">
+        <tspan x="-46.208" y="4.5" font-family="Monaco" font-size="14" fill="#FFFFFE">Sponsorship</tspan>
+      </text>
+    </g>
+    <g>
+      <path d="M175,225 L175,228 L228.5,228 L228.5,229 L175,229 L175,232 L174.5,232 L168.5,232 L168,232 L168,225 L174.5,225 L175,225 z" clip-path="url(#Clip_15)" filter="url(#Shadow_16)" fill="rgba(0,0,0,0.75)"/>
+      <g>
+        <path d="M174.5,228.5 L228.5,228.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M174.5,225.5 L168.5,225.5 L168.5,231.5 L174.5,231.5 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+    </g>
+    <g>
+      <path d="M229,235 L229,636.5 L228,636.5 L228,235 L225,235 L225,234.5 L225,228.5 L225,228 L225.5,228 L231.5,228 L232,228 L232,228.5 L232,234.5 L232,235 L229,235 z" clip-path="url(#Clip_17)" filter="url(#Shadow_18)" fill="rgba(0,0,0,0.75)"/>
+      <g>
+        <path d="M228.5,234.5 L228.5,636.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M231.5,234.5 L231.5,228.5 L225.5,228.5 L225.5,234.5 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+    </g>
+    <g>
+      <path d="M289,633 L289,640 L282,640 L282,637 L228.5,637 L228.5,636 L282,636 L282,633 L289,633 z" clip-path="url(#Clip_19)" filter="url(#Shadow_20)" fill="rgba(0,0,0,0.75)"/>
+      <g>
+        <path d="M282.5,636.5 L228.5,636.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M282.5,639.5 L288.5,639.5 L288.5,633.5 L282.5,633.5 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+    </g>
+    <g>
+      <path d="M289,555.133 L289,562.133 L282,562.133 L282,559.133 L228.5,559.133 L228.5,558.133 L282,558.133 L282,555.133 L289,555.133 z" clip-path="url(#Clip_21)" filter="url(#Shadow_22)" fill="rgba(0,0,0,0.75)"/>
+      <g>
+        <path d="M282.5,558.633 L228.5,558.633" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M282.5,561.633 L288.5,561.633 L288.5,555.633 L282.5,555.633 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+    </g>
+    <g>
+      <path d="M289,477 L289,484 L282,484 L282,481 L228.5,481 L228.5,480 L282,480 L282,477 L289,477 z" clip-path="url(#Clip_23)" filter="url(#Shadow_24)" fill="rgba(0,0,0,0.75)"/>
+      <g>
+        <path d="M282.5,480.5 L228.5,480.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M282.5,483.5 L288.5,483.5 L288.5,477.5 L282.5,477.5 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+    </g>
+    <g>
+      <path d="M289,393 L289,400 L282,400 L282,397 L228.5,397 L228.5,396 L282,396 L282,393 L289,393 z" clip-path="url(#Clip_25)" filter="url(#Shadow_26)" fill="rgba(0,0,0,0.75)"/>
+      <g>
+        <path d="M282.5,396.5 L228.5,396.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M282.5,399.5 L288.5,399.5 L288.5,393.5 L282.5,393.5 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+    </g>
+    <g>
+      <path d="M289,309 L289,316 L282,316 L282,313 L228.5,313 L228.5,312 L282,312 L282,309 L289,309 z" clip-path="url(#Clip_27)" filter="url(#Shadow_28)" fill="rgba(0,0,0,0.75)"/>
+      <g>
+        <path d="M282.5,312.5 L228.5,312.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M282.5,315.5 L288.5,315.5 L288.5,309.5 L282.5,309.5 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+    </g>
+    <g>
+      <path d="M289,225 L289,232 L282,232 L282,229 L228.5,229 L228.5,228 L282,228 L282,225 L289,225 z" clip-path="url(#Clip_29)" filter="url(#Shadow_30)" fill="rgba(0,0,0,0.75)"/>
+      <g>
+        <path d="M282.5,228.5 L228.5,228.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M282.5,231.5 L288.5,231.5 L288.5,225.5 L282.5,225.5 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
