@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--for the hamburger stuff-->
+        <link rel="stylesheet" type="text/css" href="styles/small.css" >
+        <link rel="stylesheet" type="text/css" href="styles/medium.css">
+        <link rel="stylesheet" type="text/css" href="styles/large.css">
+        <title>Chamber Home</title>
+    </head>
+    <body>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <section class="top-nav">
+            <div>
+                <div><img src="images/logo-just-pike.svg" alt="Pike"></div>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li>Sponsorship</li>
+                <li>Chamber of Commerce</li>
+                <li>Local Business</li>
+                <li>Emergency Services</li>
+                <li>Discover Lake Santeetlah</li>
+                <li>Lodging & Dining</li>
+            </ul>
+        </section>
+        <section class='hero'>
+            <h1>The Most Beautiful Lake in the USA</h1>
+            <p><span id="myYear"></span></p>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h3 style="text-align: center;">&copy; <span id="myYear"></span> .:|:. John M Harper .:|:. Utah</h3>
+                    <p>Last Updated&nbsp;<span id="myDate"></span></p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/JavaScript" src="scripts/dates.js"></script>
+        <script type="text/JavaScript" src="scripts/hamburger.js"></script>
+    </body>
+</html>
