@@ -6,34 +6,72 @@
         <title>Chamber Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./sytles/normalize.css">
-        <link rel="stylesheet" href="./sytles/large.css">
-        <link rel="stylesheet" href="./sytles/medium.css">
-        <link rel="stylesheet" href="./sytles/base.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/base.css">
     </head>
-    <body>
+    <body">
         <header>
             <section class="top-nav">
-                <div>
-                    <img src="./images/small-logo.svg" alt="NG Logo">
+                <div class="box1">
+                    <div>
+                        <img src="images/new-glasgow-logo.svg" alt="New Glasgow Logo">
+                    </div>
                 </div>
-                <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
-                <ul class="menu">
-                    <li>Discover</li>
-                    <li>Directory</li>
-                    <li>Join</li>
-                    <li>Contact</li>
-                </ul>
+                <div class="box2">
+                    <div>
+                        <h1>New Glasgow</h1>
+                    </div>
+                    <div>
+                        <h3>Chamber of Commerce</h3>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div>
+                      <div>
+                          <img src="images/fb-128px.svg" alt="fb social media">
+                      </div>
+                      <div>
+                          <img src="images/linked-in.svg" alt="fb social media">
+                      </div>
+                    </div>
+                    <div>
+                        <input id="menu-toggle" type="checkbox" />
+                        <label class='menu-button-container' for="menu-toggle">
+                            <div class='menu-button'></div>
+                        </label>
+                        <ul class="menu">
+                            <li>Discover</li>
+                            <li>Directory</li>
+                            <li>Join</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--
+                <div class="social-small">
+                    <img src="images/fb-128px.svg" alt="fb social media">
+                    <img src="images/linked-in.svg" alt="fb social media">
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                    <ul class="menu">
+                        <li>Discover</li>
+                        <li>Directory</li>
+                        <li>Join</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                -->
             </section>
             <div class="bottom-nav">
-                <p>&copy;<span id="myDateString"></span></p>
+                <p><span id="datetime"></span></p>
             </div>
         </header>
         <main></main>
         <footer></footer>
-        <script defer src="./scripts/dates.js"></script>
+        <script src="scripts/dates.js"></script>
     </body>
 </html>
