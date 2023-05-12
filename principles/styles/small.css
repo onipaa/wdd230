@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+@media only screen and  (max-width: 500px) {
+    body {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat(5, 96px);
+        grid-template-rows: repeat(40, 96px);
+        font-family: Montserrat;
+    }
+/* *****************************************************************************
+header
+***************************************************************************** */
+    /* it gets cramped in the medium state */
+    .banner {
+        display: grid;
+        grid-column: 1/6;
+        grid-row: 1/2;
+        width: 400px;
+        background-color: #004888;
+        border-radius: 16px;
+        z-index: 0;
+        box-shadow: 0 4px 4px #012567;
+    }
+
+    .banner h3 {
+        font-family: Montserrat;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+        border-bottom: 0px;
+    }
+
+    .banner p {
+        font-family: Montserrat;
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        border-top: 0px;
+    }
+/* *****************************************************************************
+principle 1 Repetition
+***************************************************************************** */
+    .parcRepetitionTop {
+        display: grid;
+        grid-column: 1/6;
+        grid-row: 2/3;
+        margin-top: 16px;
+        background-color: #004888;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        height: 44px;
+        width: 400px;
+        z-index: 99;
+    }
+
+    .parcRepetitionTop h3 {
+        font-family: Montserrat;
+        font-size: 14px;
+        text-align: center;
+        color: white;
+    }
+
+    .parcRepetitionBottom {
+        display: grid;
+        grid-column: 1/6;
+        grid-row: 2/9;
+        margin-top: 64px;
+        background-color: white;
+        width: 400px;
+        height: 100px;
+        align-items: center;
+        z-index: 0;
+    }
+
+    .parcRepetitionBottom p {
+        font-family: Montserrat;
+        font-size: 12px;
+        text-align: center;
+        color: black;
+    }
+
+    .parcRepetitionBottom hr {
+        width: 400px;
+        height: 0.5px;
+    }
+
+    .parcRepetitionBottom img {
+        width: 400px;
+        grid-row-end: 12;
+    }
+/* *****************************************************************************
+principle 2 Contrast
+***************************************************************************** */
+.parcContrastTop {
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 12/13;
+    margin-top: 16px;
+    background-color: #004888;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 44px;
+    width: 400px;
+    z-index: 99;
+}
+
+.parcContrastTop h3 {
+    font-family: Montserrat;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.parcContrastBottom {
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 12/23;
+    margin-top: 48px;
+    background-color: white;
+    width: 400px;
+    align-items: center;
+    z-index: 0;
+}
+
+.parcContrastBottom p {
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.parcContrastBottom hr {
+    width: 400px;
+    height: 0.5px;
+}
+
+.parcContrastBottom img {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* *****************************************************************************
+principle 3 Whitespace
+***************************************************************************** */
+.whitespaceTop {
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 23/24;
+    margin-top: 16px;
+    background-color: #004888;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 44px;
+    width: 400px;
+    z-index: 99;
+}
+
+.whitespacetTop h3 {
+    font-family: Montserrat;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.whitespaceBottom {
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 12/23;
+    margin-top: 48px;
+    background-color: white;
+    width: 400px;
+    align-items: center;
+    z-index: 0;
+}
+
+.whitespaceBottom p {
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.whitespaceBottom hr {
+    width: 400px;
+    height: 0.5px;
+}
+
+.whitespaceBottom img {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* *****************************************************************************
+footer
+***************************************************************************** */
+    .foot {
+        display: grid;
+        grid-column: 1/6;
+        grid-row: 19/21;
+        width: 400px;
+        background: #004888;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        box-shadow: 0 4px 4px #012567;
+        padding: 2px;
+        width: 100%;
+    }
+    
+    .foot h1 {
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Roboto';
+        margin-bottom: 0px;
+        filter: drop-shadow( 4px 6px 2px #012567);
+    }
+    
+    .foot p {
+        font-family: 'Roboto';
+        color: #CCFF00;
+        text-align: center;
+        font-size: 12px;
+    }
+}

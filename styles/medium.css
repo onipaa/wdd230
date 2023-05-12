@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+    body {
+        max-width: 672px;
+        margin: auto;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat( 7, 112px );
+        grid-template-rows: repeat( 10, 112px );
+        font-family: Montserrat;
+    }
+
+    /* it gets cramped in the medium state */
+    .banner {
+        display: grid;
+        grid-column: 1/7;
+        grid-row: 1/2;
+        width: 672px;
+        height: 112px;
+        background-color: #004888;
+        border-radius: 18px;
+        z-index: 0;
+        box-shadow: 0 5px 5px #012567;
+    }
+
+    .banner .myMug {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        z-index: 1;
+    }
+
+    .myMug img {
+        width: 100px;
+        /* height: 256px; according to Jason, we NEVER set the height */
+        justify-self: center;
+        align-self: center;
+        filter: drop-shadow(0 0 0.75rem rgb(254, 254, 211));
+    }
+
+    .banner .myName {
+        display: grid;
+        grid-column: 2/7;
+        grid-row: 1/2;
+        font-family: Montserrat;
+        justify-content: left;
+        align-content: center;
+    }
+
+    .banner .myName a {
+      text-decoration: none;
+    }
+
+    .banner .myName h1 {
+        display: grid;
+        text-align: left;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 42px;
+        align-self: center;
+        justify-self: left;
+        z-index: 99;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .exercises {
+        display: grid;
+        grid-column: 1/7;
+        grid-row: 2/6;
+        width: 672px;
+        height: 448px;
+    }
+
+    .exercises h1 {
+        font-family: 'Roboto Mono', Courier, monospace;
+        font-size: 24px;
+        font-weight: 700;
+        text-shadow: 3px 3px 3px rgb(0 0 0 / 0.4);
+        text-align:left;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .exercises hr {
+        visibility: visible;
+        border: 1px solid #004888;
+        width: 672px;
+    }
+
+    .exercises li {
+        text-align: left;
+        font-family: 'Roboto Mono', Courier, monospace;
+    }
+
+    .exercises p {
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        font-style: italic;
+        animation: animate 5s linear infinite;
+    }
+
+    @keyframes animate {
+          0% { opacity: 0; }
+         50% { opacity: 0.7; }
+        100% { opacity: 0; }
+    }
+
+    .foot {
+        display: grid;
+        grid-column: 1/7;
+        grid-row: 6/7;
+        width: 672px;
+        background: #004888;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        box-shadow: 0 5px 5px #012567;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .foot h1 {
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Roboto';
+        margin-bottom: 0px;
+        filter: drop-shadow( 3px 5px 2px #012567);
+    }
+
+    .foot p {
+        font-family: 'Roboto';
+        color: #CCFF00;
+        text-align: center;
+        font-size: 16px;
+    }
+}

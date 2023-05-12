@@ -1,0 +1,8 @@
+{
+    "manifest_version": 2,
+    "short_name": "WDD 230 Project Index",
+    "name": "WDD230: My project work.",
+    "__comment1__": "Killing all non-essential blinky lights.",
+    "start_url": "https://onipaa.github.io/wdd230/",
+    "theme_color": "#004888"
+}

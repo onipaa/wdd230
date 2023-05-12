@@ -1,0 +1,61 @@
+<!DOCTYPE html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="myWebPage">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/spacing-grid.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="container">
+            <div class="banner">
+                <div class="myMug">
+                    <img src="images/johnster.svg" alt="My Big Fat Mug">
+                </div>
+                <div class="myName"><p>John M. Harper</p></div>
+            </div>
+            <div class="exercises">
+                <table>
+                    <tr>
+                        <th><p style="font-size: 32px; text-shadow: 2px 2px 3px rgb(0 0 0 / 0.4); text-align: center;">WDD 230-03: Assignment Portal</p></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <ul>
+                                <li>Lesson 01&nbsp;<a href="https://codepen.io/j79h110/pen/JjBbNLw">Exercise W01: Applied JavaScript (Format Dates with Locale)</a></li>
+                                <li>Lesson 02&nbsp;<a href="#">Title</a></li>
+                                <li>Lesson 03&nbsp;<a href="#">Title</a></li>
+                                <li>Lesson 04&nbsp;<a href="#">Title</a></li>
+                                <li>Lesson 05&nbsp;<a href="#">Title</a></li>
+                                <li>Lesson 06&nbsp;<a href="#">Title</a></li>
+                                <li>Lesson 07&nbsp;<a href="#">Title</a></li>
+                                <li>Lesson 08&nbsp;<a href="#">Title</a></li>
+                                <li>Lesson 09&nbsp;<a href="#">Title</a></li>
+                                <li>Lesson 10&nbsp;<a href="#">Title</a></li>
+                                <li>Lesson 11&nbsp;<a href="#">Title</a></li>
+                            </ul>
+                        </th>
+                    </tr>
+                </table>
+                <p style="font-family: Roboto; font-size: 16px; text-align: center;     animation: blinker 1s linear infinite;">Some lessons may need more than one activity/assignment link.</p>
+            </div>
+        </div>
+        <footer>
+            <div class="my-parent-02">
+                <div class="footer-container">
+                    <div class="footer-content">
+                        <h2 style="text-align: center;">&copy; .:|:. John M Harper .:|:. Utah</h2>
+                        <p>Last Updated&nbsp;<span id="myDate"></span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            // Select the HTML element to manipulate
+            const date = new Date(document.lastModified);
+            document.getElementById("myDate").innerHTML = date;
+        </script>    
+    </body>
+</html>
