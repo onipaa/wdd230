@@ -82,7 +82,13 @@ html, body {
     padding-top: 10px;
 }
 
-.menu {
+.top-nav .box4 {
+    align-items: flex-end;
+    flex-direction: column;
+    width: 25px;
+}
+
+.box4 .menu {
   display: flex;
   list-style-type: none;
   margin: 0;
