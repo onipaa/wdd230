@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+@media only screen and (min-width: 1024px) {
+body {
+  max-width: 1024px;
+  margin: auto;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(8, 128px);
+  grid-template-rows: repeat(40, 128px);
+  font-family: "EB Garamond", "Montserrat", "Newsreader", "Courier";
+}
+
+.banner {
+  display: grid;
+  grid-column: 1/9;
+  grid-row: 1/2;
+  background-color: #4c4036;
+  z-index: 0;
+}
+
+.banner h1 {
+  font-size: 64px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.banner ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4c4036;
+}
+
+.banner ul.topnav li {
+  float: left;
+}
+
+.banner ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.banner ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.banner ul.topnav li a.active {
+  background-color: #e0dbcf;
+  color: black;
+}
+
+.banner ul.topnav li.right {
+  float: right;
+}
+/* *****************************************************************************
+design
+***************************************************************************** */
+.main {
+  display: grid;
+  grid-column: 1/9;
+  grid-row: 2/15;
+}
+
+.main h1 {
+  display: grid;
+  width: 100%;
+}
+
+.main p {
+  width: 100%;
+}
+
+.main .p-white1 {
+  display: grid;
+  width: 100%;
+  background-color: #4c4036;
+  color: white;
+  border: 5px;
+  padding: 5px;
+}
+
+.main .p-white2 {
+  display: grid;
+  width: 100%;
+  background-color: #977F6E;
+  color: white;
+  border: 5px;
+  padding: 5px;
+}
+
+.foot {
+  display: grid;
+  grid-column: 1/9;
+  grid-row: 32/33;
+  width: 100%;
+  background: #4c4036;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 5px #012567;
+  padding: 5px;
+  width: 100%;
+}
+
+.foot h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto";
+  margin-bottom: 0px;
+  filter: drop-shadow(3px 5px 2px #012567);
+}
+
+.foot p {
+  font-family: "Roboto";
+  color: #ccff00;
+  text-align: center;
+  font-size: 16px;
+}
+/* *****************************************************************************
+home
+***************************************************************************** */
+.main-home {
+  display: grid;
+  grid-column: 1/9;
+  grid-row: 2/6;
+}
+
+.main-home h1 {
+  display: grid;
+  width: 100%;
+}
+
+.main-home p {
+  width: 100%;
+}
+
+.main-home .p-white1 {
+  display: grid;
+  width: 100%;
+  background-color: #4c4036;
+  color: white;
+  border: 5px;
+  padding: 5px;
+}
+
+.main-home .p-white2 {
+  display: grid;
+  width: 100%;
+  background-color: #977F6E;
+  color: white;
+  border: 5px;
+  padding: 5px;
+}
+
+.main-home img {
+  display: grid;
+}
+
+.foot-home { 
+  display: grid;
+  grid-column: 1/9;
+  grid-row: 6/7;
+  width: 100%;
+  background: #4c4036;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 5px #012567;
+  padding: 5px;
+  width: 100%;
+}
+
+.foot-home h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto";
+  margin-bottom: 0px;
+  filter: drop-shadow(3px 5px 2px #012567);
+}
+
+.foot-home p {
+  font-family: "Roboto";
+  color: #ccff00;
+  text-align: center;
+  font-size: 16px;
+}
+}
