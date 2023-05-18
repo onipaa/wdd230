@@ -1,45 +1,128 @@
-@media (min-width: 1001px) {
-    .menu-button-container {
-      display: flex;
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+
+@media only screen and (min-width: 1000px) {
+    #top-nav {
+        grid-template-columns: 12.5% 30% 45% 12.5%;
+        grid-template-rows: 125px 50px;
     }
-    .menu {
-      position: absolute;
-      top: 0;
-      /* 
-         I put the menu down lower so it looks like a drop down coming out of the 
-         header. I hope that is not too goofy.
-      */
-      margin-top: 200px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
+
+    #top-nav .logo {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
     }
-    #menu-toggle ~ .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+
+    .logo img {
+        width: 75px;
     }
-    #menu-toggle:checked ~ .menu li {
-      border: 1px solid #333;
-      padding: 16px;
-      width: 100%;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+
+    #top-nav .banner {
+      display: grid;
+      grid-column: 2/3;
+      grid-row: 1/2;
     }
-    .menu > li {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      color: white;
-      background-color: #222;
+
+    .banner h1 {
+        font-size: 2em;
+        font-family: "EB Garamond";
+        color: white;
+        text-align: left;
+        margin-bottom: 0;
     }
-    .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444;
+
+    .banner h3 {
+        font-size: 1em;
+        font-family: "EB Garamond";
+        color: white;
+        text-align: left;
+        margin-top: 0;
     }
+
+    #top-nav .social {
+        display: grid;
+        grid-column: 4/5;
+        grid-row: 1/2;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .social img {
+        width: 40px;
+        padding: 5px;
+    }
+
+    #top-nav .date {
+        display: grid;
+        grid-column: 1/5;
+        grid-row: 2/3;
+        background-color: #977F6E;
+        color: white;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    #top-nav .horizontal-nav {
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        align-items: center;
+        justify-items: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        padding: 20px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #event {
+        grid-area: events;
+    }
+
+    #weather {
+        grid-area: weather;
+    }
+
+    #join {
+        grid-area: join;
+    }
+
+    #hero {
+        grid-area: hero;
+    }
+
+    #news {
+        grid-area: news;
+    }
+
+    #spot {
+        grid-area: spot;
+    }
+
+
+  main-container {
+      grid-column: 
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "event hero hero spotlights"
+      "weather hero hero spotlights"
+      "join news news spotlights";
   }
-  
+}

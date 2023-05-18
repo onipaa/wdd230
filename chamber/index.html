@@ -7,56 +7,62 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/large.css">
-        <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
     </head>
-    <body">
-        <header>
-            <div class="top-nav">
-                <div class="box1">
-                    <div>
-                        <img src="images/new-glasgow-logo.svg" alt="New Glasgow Logo">
-                    </div>
-                </div>
-                <div class="box2">
-                    <div>
-                        <h1>New Glasgow</h1>
-                    </div>
-                    <div>
-                        <h3>Chamber of Commerce</h3>
-                    </div>
-                </div>
-                <div class="box3">
-                    <div>
-                      <div>
-                          <img src="images/fb-128px.svg" alt="fb social media">
-                      </div>
-                      <div>
-                          <img src="images/linked-in.svg" alt="fb social media">
-                      </div>
-                    </div>
-                </div>
-                <div class="box4">
-                    <input id="menu-toggle" type="checkbox" />
-                    <label class='menu-button-container' for="menu-toggle">
-                        <div class='menu-button'></div>
-                    </label>
-                    <ul class="menu">
-                        <li>Discover</li>
-                        <li>Directory</li>
-                        <li>Join</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                </div>
+    <body id="contentWrapper">
+        <header id="top-nav">
+            <div class="logo">
+                <img src="images/new-glasgow-logo.svg" alt="New Glasgow Logo">
             </div>
-            <div class="bottom-nav">
-                <p><span id="datetime"></span></p>
+
+            <div class="banner">
+                <h1>New Glasgow</h1>
+                <h3>Chamber of Commerce</h3>
+            </div>
+
+            <div class="social">
+                <img src="images/fb-128px.svg" alt="fb social media">
+                <img src="images/linked-in.svg" alt="fb social media">
+            </div>
+
+            <div class="hamby">
+                <section class="p-menu1">
+                    <nav id="navbar" class="navigation" role="navigation">
+                        <input id="toggle1" type="checkbox" />
+                        <label class="hamburger1" for="toggle1">
+                            <div class="top"></div>
+                            <div class="meat"></div>
+                            <div class="bottom"></div>
+                        </label>
+                    </nav>
+                </section>
+            </div>
+
+            <div class="date">
+                <span id="datetime"></span>
             </div>
         </header>
-        <main></main>
-        <footer></footer>
+        <main class="main">
+            <div class="hero">Hero</div>
+            <div class="events">Events</div>
+            <div class="weather">Weather</div>
+            <div class="news">News</div>
+            <div class="join">Join</div>
+            <div class="spotlights">
+                Spotlights
+                <div class="spot1">Spotlight 1</div>
+                <div class="spot2">Spotlight 2</div>
+            </div>
+            <div class="contact">
+                Social Media Contact
+            </div>
+        </main>
+        <footer class="foot">
+            <h1 style="text-align: center;">&copy; <span id="copyrightYear"></span> .:|:. John M Harper .:|:. Utah</h1>
+            <p>Last Updated&nbsp;<span id="lastUpdateDate"></span></p>
+        </footer>
         <script src="scripts/dates.js"></script>
     </body>
 </html>
