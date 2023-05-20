@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap");
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 600px) and (max-width: 975px) {
 /* ************************************************************************** */
 /* container at min of 550 px                                                 */
 /* ************************************************************************** */
@@ -117,7 +117,7 @@
   }
   
   #toggle1 {
-    display: none;
+    display: grid;
   }
   
   #toggle1:checked + .hamburger1 .top {
@@ -175,12 +175,15 @@
   }
   
   .spotlights {
+    display: grid;
     grid-area: spt;
     background-color: rgba(0,0,0,0.25);
     border: 1px solid black; 
     margin-top: 10px;
-    grid-template-columns: 350 350px;
-    grid-template-rows: 250px;
+    grid-template-rows: 50px 200px;
+    grid-template-columns: 325px 325px;
+    justify-content: center;
+    align-items: center;
   }
   
   .contact {
@@ -219,8 +222,8 @@
     display: grid;
     background-color: rgba(0,0,0,0.50);
     grid-column: 1/2;
-    width: 200px;
-    padding: 20px;
+    width: 275px;
+    height: 100px;
     margin: 10px auto;
   }
   
@@ -228,9 +231,13 @@
     display: grid;
     background-color: rgba(0,0,0,0.50);
     grid-column: 2/3;
-    width: 200px;
-    padding: 20px;
+    width: 275px;
+    height: 100px;
     margin: 10px auto;
+  }
+
+  .spotlights .spot3 {
+    display: none;
   }
 /* ************************************************************************** */
 /* footer                                                                     */

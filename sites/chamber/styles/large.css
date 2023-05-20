@@ -1,128 +1,222 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap");
 
-@media only screen and (min-width: 1000px) {
-    #top-nav {
-        grid-template-columns: 12.5% 30% 45% 12.5%;
-        grid-template-rows: 125px 50px;
-    }
+@media only screen and (min-width: 976px) {
+/* ************************************************************************** */
+/* container at min of 550 px                                                 */
+/* ************************************************************************** */
+#contentWrapper {
+    display: grid;
+    grid-template-columns: 1000px;
+    grid-template-rows: 125px 50px 250px 250px  250px  250px  250px 100px;
+}
 
-    #top-nav .logo {
-        display: grid;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        align-items: center;
-        justify-content: center;
-        padding-left: 30px;
-    }
+/* ************************************************************************** */
+/* header                                                                     */
+/* ************************************************************************** */
+#contentWrapper #top-nav {
+    display: grid;
+    background-color: #4C4036;
+    height: 125px;
+    width: 100%;
+    grid-template-columns: 100px 775px 50px 75px;
+    grid-template-rows: 125px 50px;
+  }
 
-    .logo img {
-        width: 75px;
-    }
+#top-nav .logo {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  
+  .logo img {
+    width: 75px;
+  }
+  
+  #top-nav .banner {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  .banner h1 {
+    font-size: 2em;
+    font-family: "EB Garamond";
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .banner h3 {
+    font-size: 1em;
+    font-family: "EB Garamond";
+    color: white;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  #top-nav .social {
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  
+  .social img {
+    width: 40px;
+    padding: 5px;
+  }
+  
+  #top-nav .date {
+    display: grid;
+    grid-row: 2/3;
+    background-color: #977F6E;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    width: 1000px;
+  }
+    
+  #top-nav .hamby {
+    display: none;
+  }
+/* ************************************************************************** */
+/* main                                                                       */
+/* ************************************************************************** */
+.hero {
+    grid-area: hro;
+    background-color: rgba(0,0,0,0.25);
+    border: 1px solid black; 
+    margin: 5px;
+    margin-top: 10px;
+  }
+  
+  .events {
+    grid-area: evt;
+    background-color: rgba(0,0,0,0.25);
+    border: 1px solid black; 
+    margin: 5px;
+    margin-top: 10px;
+    margin-left: 10px;;
+  }
+  
+  .weather {
+    grid-area: wth;
+    background-color: rgba(0,0,0,0.25);
+    border: 1px solid black; 
+    margin: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .news {
+    grid-area: nws;
+    background-color: rgba(0,0,0,0.25);
+    border: 1px solid black; 
+    margin: 5px;
+    margin-top: 10px;
+  }
+  
+  .spotlights {
+    display: grid;
+    grid-area: spt;
+    background-color: rgba(0,0,0,0.25);
+    border: 1px solid black; 
+    margin: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    grid-template-rows: 50px 200px;
+    grid-template-columns: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact {
+    grid-area: con;
+    background-color: rgba(0,0,0,0.25);
+    border: 1px solid black;
+    margin: 5px;
+    margin-top: 10px;
+  }
 
-    #top-nav .banner {
-      display: grid;
-      grid-column: 2/3;
-      grid-row: 1/2;
-    }
+  .join {
+    grid-area: joi;
+    background-color: rgba(0,0,0,0.25);
+    border: 1px solid black;
+    margin: 5px;
+    margin-top: 10px;
+  }
+  
+  #contentWrapper .main {
+    display: grid;
+    background-color: white;
+    grid-row: 3/11;
+    border: 10px;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: repeat(3, 250px);
+    grid-template-areas:
+    "evt hro hro spt"
+    "wth hro hro spt"
+    "joi nws nws spt"
+    "con con con con"    
+  }
+/* ************************************************************************** */
+/* spots                                                                      */
+/* ************************************************************************** */
+.spotlights .spot1 {
+    display: grid;
+    background-color: rgba(0,0,0,0.50);
+    grid-column: 1/2;
+    width: 175px;
+    height: 100px;
+    margin: 10px auto;
+  }
+  
+  .spotlights .spot2 {
+    display: grid;
+    background-color: rgba(0,0,0,0.50);
+    grid-column: 1/2;
+    width: 175px;
+    height: 100px;
+    margin: 10px auto;
+  }
 
-    .banner h1 {
-        font-size: 2em;
-        font-family: "EB Garamond";
-        color: white;
-        text-align: left;
-        margin-bottom: 0;
-    }
+  .spotlights .spot3 {
+    display: grid;
+    background-color: rgba(0,0,0,0.50);
+    grid-column: 1/2;
+    width: 175px;
+    height: 100px;
+    margin: 10px auto;
+  }
+/* ************************************************************************** */
+/* footer                                                                     */
+/* ************************************************************************** */
+#contentWrapper .foot {
+    display: grid;
+    grid-row: 11/12;
+    background-color: #977F6E;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+    height: 100px;
+    width: 1000px;
+    margin: 5px auto;
+    margin-top: 5px;
+  }
+  
+  .foot h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
 
-    .banner h3 {
-        font-size: 1em;
-        font-family: "EB Garamond";
-        color: white;
-        text-align: left;
-        margin-top: 0;
-    }
-
-    #top-nav .social {
-        display: grid;
-        grid-column: 4/5;
-        grid-row: 1/2;
-        align-items: center;
-        justify-content: center;
-        padding-top: 10px;
-    }
-
-    .social img {
-        width: 40px;
-        padding: 5px;
-    }
-
-    #top-nav .date {
-        display: grid;
-        grid-column: 1/5;
-        grid-row: 2/3;
-        background-color: #977F6E;
-        color: white;
-        text-align: center;
-        padding-top: 15px;
-    }
-
-    #top-nav .horizontal-nav {
-        display: grid;
-        grid-column: 3/4;
-        grid-row: 1/2;
-        align-items: center;
-        justify-items: center;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    li {
-        float: left;
-    }
-
-    li a {
-        display: block;
-        padding: 20px;
-        color: white;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    #event {
-        grid-area: events;
-    }
-
-    #weather {
-        grid-area: weather;
-    }
-
-    #join {
-        grid-area: join;
-    }
-
-    #hero {
-        grid-area: hero;
-    }
-
-    #news {
-        grid-area: news;
-    }
-
-    #spot {
-        grid-area: spot;
-    }
-
-
-  main-container {
-      grid-column: 
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-      "event hero hero spotlights"
-      "weather hero hero spotlights"
-      "join news news spotlights";
+  .foot p {
+    font-size: 1em;
+    margin: 0;
   }
 }
