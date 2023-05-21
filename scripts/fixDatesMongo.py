@@ -102,6 +102,12 @@ def main():
 
     print(dfAllInspections['date'].head())
 
+
+    
+
+
+
+
     print(updateResults)
 
     if args.verbose:
