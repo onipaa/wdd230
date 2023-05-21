@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
 
-@media only screen and  (max-width: 500px) {
     body {
         max-width: 400px;
         margin: auto;
@@ -10,8 +7,8 @@
 
     #container {
         display: grid;
-        grid-template-columns: repeat(5, 96px);
-        grid-template-rows: repeat(40, 96px);
+        grid-template-columns: repeat(5, 80px);
+        grid-template-rows: repeat(35, 96px);
         font-family: Montserrat;
     }
 /* *****************************************************************************
@@ -166,7 +163,7 @@ principle 3 Whitespace
     z-index: 99;
 }
 
-.whitespacetTop h3 {
+.whitespaceTop h3 {
     font-family: Montserrat;
     font-size: 14px;
     text-align: center;
@@ -176,7 +173,7 @@ principle 3 Whitespace
 .whitespaceBottom {
     display: grid;
     grid-column: 1/6;
-    grid-row: 12/23;
+    grid-row: 23/34;
     margin-top: 48px;
     background-color: white;
     width: 400px;
@@ -190,8 +187,7 @@ principle 3 Whitespace
     text-align: center;
     color: black;
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 .whitespaceBottom hr {
@@ -205,13 +201,14 @@ principle 3 Whitespace
     padding: 0;
     border: 0;
 }
+
 /* *****************************************************************************
 footer
 ***************************************************************************** */
     .foot {
         display: grid;
         grid-column: 1/6;
-        grid-row: 19/21;
+        grid-row: 34/36;
         width: 400px;
         background: #004888;
         align-items: center;
@@ -237,4 +234,3 @@ footer
         text-align: center;
         font-size: 12px;
     }
-}
