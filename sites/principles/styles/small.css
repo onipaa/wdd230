@@ -173,7 +173,7 @@ principle 3 Whitespace
 .whitespaceBottom {
     display: grid;
     grid-column: 1/6;
-    grid-row: 23/34;
+    grid-row: 23/36;
     margin-top: 48px;
     background-color: white;
     width: 400px;
@@ -208,7 +208,7 @@ footer
     .foot {
         display: grid;
         grid-column: 1/6;
-        grid-row: 34/36;
+        grid-row: 36/38;
         width: 400px;
         background: #004888;
         align-items: center;
