@@ -8,7 +8,7 @@
     #container {
         display: grid;
         grid-template-columns: repeat(5, 80px);
-        grid-template-rows: repeat(39, 96px);
+        grid-template-rows: repeat(38, 96px) 10px 38px 38px;
         font-family: Montserrat;
     }
 /* *****************************************************************************
@@ -208,7 +208,7 @@ footer
     .foot {
         display: grid;
         grid-column: 1/6;
-        grid-row: 36/38;
+        grid-row: 37/39;
         width: 400px;
         background: #004888;
         align-items: center;
