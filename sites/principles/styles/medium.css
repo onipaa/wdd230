@@ -1,0 +1,13 @@
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    body {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat(10, 80px);
+        grid-template-rows: repeat(30, 80px);
+        font-family: Montserrat;
+    }
+}

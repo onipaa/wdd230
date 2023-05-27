@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
 
+@media only screen and (min-width: 400px) and (max-width: 600px) {
 body {
     max-width: 400px;
     margin: auto;
@@ -229,4 +230,5 @@ footer
     color: #CCFF00;
     text-align: center;
     font-size: 12px;
+}
 }
