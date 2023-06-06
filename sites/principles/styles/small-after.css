@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Newsreader:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 400px;
+        margin: auto;
+    }
+    
+    #container {
+        display: grid;
+        grid-template-columns: repeat(8, 50px);
+        grid-template-rows: repeat(67, 50px);
+        font-family: Montserrat;
+    }
+/* ************************************************************************** */
+/* header                                                                     */
+/* ************************************************************************** */
+.banner {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 1/3;
+    background-color: #004888;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px black;
+}
+
+.banner h3 {
+    display: grid;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.banner p {
+    display: grid;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+/* ************************************************************************** */
+/* main                                                                       */
+/* ************************************************************************** */
+.repetition-top {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 3/4;
+    background-color: #004888;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 50px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.repetition-top h3 {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 3/4;
+    color: white;
+    text-align: center;
+    padding-top: 0;
+}
+
+.repetition-blurb {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 4/7;
+}
+
+.repetition-blurb p {
+    display: grid;
+    grid-column: 1/9;
+    width: 400px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+
+}
+
+.repetition-blurb a {
+    display: grid;
+    grid-column: 1/9;
+    width: 400px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.repetition-img {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 7/23;
+    background-image: url("../images/pmp-rose-d-dall-phone.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 400px;
+}
+/* ************************************************************************** */
+.contrast-top {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 23/24;
+    background-color: #004888;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 50px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.contrast-top h3 {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 24/25;
+    color: white;
+    text-align: center;
+    padding-top: 0;
+}
+
+.contrast-blurb {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 25/27;
+}
+
+.contrast-blurb p {
+    display: grid;
+    grid-column: 1/9;
+    width: 400px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+
+}
+
+.contrast-blurb a {
+    display: grid;
+    grid-column: 1/9;
+    width: 400px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contrast-img {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 28/44;
+    background-image: url("../images/pmp-digital-silk-phone.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 400px;
+}
+/* ************************************************************************** */
+.whitespace-top {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 43/44;
+    background-color: #004888;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 50px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.whitespace-top h3 {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 44/45;
+    color: white;
+    text-align: center;
+    padding-top: 0;
+}
+
+.whitespace-blurb {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 45/47;
+}
+
+.whitespace-blurb p {
+    display: grid;
+    grid-column: 1/9;
+    width: 380px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+
+}
+
+.whitespace-blurb a {
+    display: grid;
+    grid-column: 1/9;
+    width: 400px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.whitespace-img {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 47/6344;
+    background-image: url("../images/pmp-whitespace-phone.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 400px;
+}
+/* ************************************************************************** */
+/* footer                                                                     */
+/* ************************************************************************** */
+.foot {
+    display: grid;
+    grid-column: 1/9;
+    grid-row: 66/68;
+    width: 400px;
+    background: #004888;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px #012567;
+    padding: 2px;
+    width: 100%;
+}
+
+.foot h1 {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto';
+    margin-bottom: 0px;
+    filter: drop-shadow( 4px 6px 2px #012567);
+}
+
+.foot p {
+    font-family: 'Roboto';
+    color: #CCFF00;
+    text-align: center;
+    font-size: 12px;
+}
+
+}
