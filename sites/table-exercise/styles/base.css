@@ -39,6 +39,7 @@ th, td {
 
 th {
 	background-color: var(--back2);
+	color: white;
 	font-size: larger;
 }
 
