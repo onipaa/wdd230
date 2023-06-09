@@ -37,11 +37,6 @@ th, td {
 	border: 1px solid var(--borderlight);
 }
 
-.bubba {
-	padding: 7px 15px;
-	border: 1px solid var(-back);
-}
-
 th {
 	background-color: var(--back2);
 	font-size: larger;
