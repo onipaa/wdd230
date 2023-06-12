@@ -17,6 +17,7 @@ function addToFavorites(bookChapter) {
     if (!favoriteChapters.includes(bookChapter)) {
       // Add the chapter to the favorite list
       favoriteChapters.push(bookChapter);
+      displayFavorites();
       console.log('Added to favorites:', bookChapter);
     } else {
       console.log('Chapter is already in favorites:', bookChapter);
@@ -77,7 +78,6 @@ addButton.addEventListener('click', () => {
     if (chapterName.trim() !== '') {
         addToFavorites(chapterName);
         chapterInput.value = '';
-        displayFavorites();
   }
 });
 
