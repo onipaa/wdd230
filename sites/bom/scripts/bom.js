@@ -22,6 +22,8 @@ function addToFavorites(bookChapter) {
       console.log('Chapter is already in favorites:', bookChapter);
     }
 
+    // I don't know if it's kosher to guard the display. I don't want that box
+    // on the list if there isn't anything in the array.r
     if ( favoriteChapters.length > 0 ) {
         displayFavorites()
     }
