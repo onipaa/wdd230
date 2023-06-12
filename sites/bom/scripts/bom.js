@@ -77,6 +77,7 @@ addButton.addEventListener('click', () => {
     if (chapterName.trim() !== '') {
         addToFavorites(chapterName);
         chapterInput.value = '';
+        displayFavorites();
   }
 });
 
