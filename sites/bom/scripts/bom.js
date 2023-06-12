@@ -70,10 +70,11 @@ addButton.addEventListener('click', () => {
   }
 });
 
-if ( favoriteChapters.length > 0 ) {
-    displayFavorites()
-}
+//if ( favoriteChapters.length > 0 ) {
+//    displayFavorites()
+//}
 
+displayFavorites();
 console.log('Favorite chapters:', favoriteChapters);
 
 
