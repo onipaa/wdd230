@@ -1,3 +1,15 @@
+// Brother B. said that we should not use var as a variable constructor. I think
+// I have got all of them set to const. I also did not like the way that the
+// vanilla script named stuff with abbreviations EVERYWHERE.
+
+// Pseudo:
+// 1. Create an array to hold favorite chapters.
+// 2. Create a function to add input to the array.
+// 3. Create a function to remove values from the array.
+// 4. Display favorites.
+// 5. Create listener buttons.
+// 6. Pass tests at the bottom of page
+
 const favoriteChapters = [];
 
 function addToFavorites(bookChapter) {
@@ -57,12 +69,10 @@ const addButton = document.getElementById('addChapterButton');
 addButton.addEventListener('click', () => {
     //fetch the input from the text id chapterInput
     const chapterInput = document.getElementById('chapterInput');
-    // trim all elements from the array to start with... I'm wondering if this
-    // is a good/bad thing.
-    // basically:
-    //     if chapterName has something, add it to the favorites
-    //     otherwise don't do anything (nothing coded)
-    //     clear the chapterInput existing value
+    
+    // Look at the "trimmed" chapterName value. If it is not blank, 
+    // addToFavorites(chapterName)
+    // empty the value from the input box
     const chapterName = chapterInput.value;
     if (chapterName.trim() !== '') {
         addToFavorites(chapterName);
@@ -70,15 +80,13 @@ addButton.addEventListener('click', () => {
   }
 });
 
-//if ( favoriteChapters.length > 0 ) {
-//    displayFavorites()
-//}
+if ( favoriteChapters.length > 0 ) {
+    displayFavorites()
+}
 
-displayFavorites();
 console.log('Favorite chapters:', favoriteChapters);
 
-
-/* tdd testing
+/* testing
 addToFavorites('1 Nephi 1 (Lehi Prays and Sees Vision)'.padEnd(75, '\u00A0'));
 addToFavorites('1 Nephi 1 (Lehi Prays and Sees Vision)'.padEnd(75, '\u00A0'));
 addToFavorites('1 Nephi 3 (Nephi Prays to Know Lehi\'s Vision)'.padEnd(75, '\u00A0'));
