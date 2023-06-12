@@ -17,10 +17,13 @@ function addToFavorites(bookChapter) {
     if (!favoriteChapters.includes(bookChapter)) {
       // Add the chapter to the favorite list
       favoriteChapters.push(bookChapter);
-      displayFavorites();
       console.log('Added to favorites:', bookChapter);
     } else {
       console.log('Chapter is already in favorites:', bookChapter);
+    }
+
+    if ( favoriteChapters.length > 0 ) {
+        displayFavorites()
     }
 }
 
@@ -80,10 +83,6 @@ addButton.addEventListener('click', () => {
         chapterInput.value = '';
   }
 });
-
-if ( favoriteChapters.length > 0 ) {
-    displayFavorites()
-}
 
 console.log('Favorite chapters:', favoriteChapters);
 
