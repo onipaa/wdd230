@@ -14,12 +14,12 @@
         <p>Some blurb to give me vertical space so the images don't auto-magically load.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tincidunt mauris. Quisque laoreet vel velit sit amet mattis. Duis lacinia est ligula, eget auctor tellus tincidunt vel. Nunc scelerisque, leo vitae varius interdum, nulla orci ornare est, nec tincidunt tellus enim non nisl. Proin commodo libero vel elit lacinia, a mollis ex lacinia. Aliquam ut purus felis. Mauris pulvinar urna et magna euismod, at aliquam tellus consectetur. Sed vitae tincidunt lorem. Vestibulum tincidunt molestie velit non aliquam. Morbi non facilisis nisl, ac auctor sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec nec molestie augue.</p>
         <p>Donec interdum tincidunt libero. Cras nunc nisl, rhoncus vel auctor et, consequat sed urna. Curabitur sit amet nibh id arcu sollicitudin eleifend nec in mi. Nullam viverra ligula dolor, id tincidunt diam feugiat condimentum. In faucibus gravida mi, vitae pulvinar erat consectetur at. Aenean et nisl tincidunt, feugiat est nec, scelerisque lacus. Aenean vestibulum dui sed erat fringilla aliquet. Quisque tellus enim, sagittis in gravida non, bibendum quis est. Maecenas sed nisl erat.</p>        
-        <div class="spacer_block">Spacer One To Simulate Lazy Load</div>
         <div>
             <!--
                 So, I fixed an example I saw online. They did some weird stuff 
                 like making the image bigger and bigger to get a random kitty
                 picture. I'm like, "why?!? Just use their api the right way."
+                ## this works in bash and zsh
                 for i in {1..50}; do what_image=$[${RANDOM}%16+1]; echo "<img loading='lazy' src='https://placekitten.com/300/400?image=${what_image}' width='300' height='400' alt='image_${i}'>"; done
             -->
             <img loading='lazy' src='https://placekitten.com/300/400?image=4' width='300' height='400' alt='image_1'>
