@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lazy Loading Images</title>
+  <style>
+    .image {
+      width: 300px;
+      height: 400px;
+      background-color: lightgray;
+      text-align: center;
+      font-size: 18px;
+      color: white;
+      transition: opacity 0.5s ease;
+    }
+    .image.loaded {
+      opacity: 1;
+    }
+  </style>
+  <script>
+    function lazyLoadImages() {
+      const images = document.querySelectorAll('.image');
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+  
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const image = entry.target;
+            const imageUrl = image.getAttribute('data-src');
+  
+            image.setAttribute('src', imageUrl);
+            image.classList.add('loaded');
+  
+            observer.unobserve(image);
+          }
+        });
+      }, options);
+  
+      images.forEach(image => {
+        imageObserver.observe(image);
+      });
+    }
+  
+    document.addEventListener('DOMContentLoaded', lazyLoadImages);
+  </script>
+</head>
+<body>
+  <h1>Lazy Loading Images</h1>
+  <div>
+    <img class="image" data-src="images/alberta-01-300x400.jpg" alt="Image 1 Placeholder">
+    <img class="image" data-src="images/bora-bora-01-300x400.jpg" alt="Image 2 Placeholder">
+    <img class="image" data-src="images/cafe-01-300x400.jpg" alt="Image 3 Placeholder">
+    <img class="image" data-src="images/river-01-300x400.jpg" alt="Image 4 Placeholder">
+    <img class="image" data-src="images/sweet-01-300x400.jpg" alt="Image 5 Placeholder">
+  </div>
+</body>
+</html>
