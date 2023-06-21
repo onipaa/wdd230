@@ -1,0 +1,104 @@
+
+@media screen only and (max-width: 550px) {
+    
+}
+.banner {
+    display: grid;
+    grid-template-columns: 125px 125px 50px 125px 125px;
+    grid-template-rows: 125px 25px;
+    width: 550px;
+    height: auto;
+}
+
+.banner .logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.banner .city-banner {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+}
+
+.banner .hamburger {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+.banner .date {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 125px 125px 50px 125px 125px;
+    grid-template-rows: repeat(13, 125px);
+    grid-template-areas:
+        "hero hero hero hero hero"
+        "events events events events events"
+        "weather weather weather weather weather"
+        "news news news news news"
+        "spots spots spots spots spots";
+    width: 500px;
+    height: auto;
+}
+
+.main .hero {
+    grid-column: 1 / 6;
+    grid-row: 1 / 4;
+    grid-area: hero;
+}
+
+.main .events {
+    grid-column: 1 / 6;
+    grid-row: 4 / 6;
+    grid-area: events;
+}
+
+.main .weather {
+    grid-column: 1 / 6;
+    grid-row: 6 / 8;
+    grid-area: weather;
+}
+
+.main .news {
+    grid-column: 1 / 6;
+    grid-row: 8 / 9;
+    grid-area: news;
+}
+
+.main .spotlights {
+    grid-column: 1 / 6;
+    grid-row: 9 / 13;
+    grid-area: spots;
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 250px 250px;
+}
+
+.spotlights .spot1 {
+    grid-row: 1 / 2;
+}
+
+.spotlights .spot2 {
+    grid-row: 2 / 3;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 125px 125px 50px 125px 125px;
+    grid-template-rows: 125px;
+    width: 100%;
+    height: auto;
+}
+
+.banner .hamburger ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner .hamburger ul li {
+    margin-left: 10px;
+}

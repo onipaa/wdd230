@@ -1,0 +1,9 @@
+@media screen and (max-width: 750px) {
+    .footer .hamburger {
+        display: block;
+    }
+
+    .banner .hamburger {
+        display: none;
+    }
+}
