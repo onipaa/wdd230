@@ -5,8 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join New Glasgow Chamber</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base-form.css">
+    <link rel="stylesheet" href="styles/medium-form.css">
 </head>
-<body>
-    
+<body id="contentWrapper">
+    <header id="top-nav">
+        <div class="logo">
+            <img src="images/new-glasgow-logo.svg" alt="New Glasgow Logo">
+        </div>
+
+        <div class="banner">
+            <h1>New Glasgow</h1>
+            <h3>Chamber of Commerce</h3>
+        </div>
+
+        <div class="social">
+            <img src="images/fb-128px.svg" alt="fb social media">
+            <img src="images/linked-in.svg" alt="fb social media">
+        </div>
+
+        <div class="hamby">
+            <section class="p-menu1">
+                <nav id="navbar" class="navigation">
+                    <input id="toggle1" type="checkbox">
+                    <label class="hamburger1" for="toggle1">
+                        <div class="top"></div>
+                        <div class="meat"></div>
+                        <div class="bottom"></div>
+                    </label>
+                </nav>
+            </section>
+        </div>
+
+        <div class="date">
+            <span id="datetime"></span>
+        </div>
+    </header>
+    <main class="main">
+        <form>
+            <h1 class="formBanner">Chamber Application Form</h1>
+            <div class="personalInfo">
+                <fieldset>
+                    <legend>Applicant Personal Information</legend>
+                    <table>
+                        <tr>
+                            <td>Given Names:</td>
+                            <td><input class="requiredInput" type="text" id="givenName" name="givenName" placeholder="Enter your preferred given name here." size="40" required></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td>    
+                            <td><input class="requiredInput" type="text" id="familyName" name="familyName" placeholder="Enter your last/family name here." size="40" required></td>
+                        </tr>
+                        <tr>
+                            <td>Business Title:</td>    
+                            <td><input type="text" id="businessTitle" name="businessTitle" placeholder="Enter your business title here." size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Email Address:</td>    
+                            <td><input class="requiredInput" type="text" id="emailAddress" name="emailAddress" placeholder="Enter your email address here." size="40" required></td>
+                        </tr>
+                        <tr>
+                            <td>Cell Phone:</td>    
+                            <td><input class="requiredInput" type="text" id="cellPhone" name="cellPhone" placeholder="Enter your cell phone number here." size="40" required></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+            <div class="companyInfo">
+                <fieldset>
+                    <legend>Company Information</legend>
+                    <table>
+                        <tr>
+                            <td width="100px">Business Name:</td>
+                            <td><input class="requiredInput" type="text" id="businessName" name="businessName" placeholder="Enter your Business Name here." size="40" required>
+                        </tr>
+                        <tr>
+                            <td width="100px">Description:</td>
+                            <td><input class="textAreaInput" type="textarea" id="businessName" name="businessName" placeholder="Enter your Business Name here." size="40" required></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+            <div class="membershipType">
+                <fieldset>
+                    <legend>Choose Your Membership Type</legend>
+                    <table>
+                        <tr>
+                            <td>Non Profit Free</td>
+                            <td><input class="radio-option" type="radio" id="mlNonProfit" name="membershipLevel" value="Non Profit"></td>
+                        </tr>
+                        <tr>
+                            <td>Bronze Membership $5.99/Mo</td>
+                            <td><input class="radio-option" type="radio" id="mlBronze" name="membershipLevel" value="Non Profit"></td>
+                        </tr>
+                        <tr>
+                            <td>Silver Membership $15.99/Mo</td>
+                            <td><input class="radio-option"  type="radio" id="mlSilver" name="membershipLevel" value="Non Profit"></td>
+                        </tr>
+                        <tr>
+                            <td>Gold Membership $32.99/Mo</td>
+                            <td><input class="radio-option" type="radio" id="mlGold" name="membershipLevel" value="Non Profit"></td>
+                        </tr>
+                    </table>
+                    <input type="button" id="submitValues" name="submitValues" value="Submit Application">
+                </fieldset>
+            </div>
+    </form>
+    <footer class="foot">
+        <h1 style="text-align: center;">&copy; <span id="copyrightYear"></span> .:|:. John M Harper .:|:. Utah</h1>
+        <p>Last Updated&nbsp;<span id="lastUpdateDate"></span></p>
+    </footer>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>

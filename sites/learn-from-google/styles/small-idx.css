@@ -1,0 +1,68 @@
+@media only screen and (min-width: 400px) and (max-width: 750px) {
+/* Grid container for the header */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    /* Common header styles */
+}
+
+/* Logo styles */
+.logo {
+    /* Styles for the logo */
+}
+
+/* Header content styles */
+.header-content {
+    /* Styles for the header content (city name, chamber title, social media icons) */
+    grid-column: 2;
+    text-align: center;
+}
+
+.city-name {
+    /* Styles for the city name */
+}
+
+.chamber-title {
+    /* Styles for the chamber of commerce title */
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none;
+    /* Hide the hamburger menu by default */
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    /* Hamburger menu styles */
+}
+
+.menu {
+    display: none;
+    /* Hide the menu items by default */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Div with last changed date */
+.last-changed {
+    background-color: #C7AC96;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
