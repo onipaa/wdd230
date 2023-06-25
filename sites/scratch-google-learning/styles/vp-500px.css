@@ -1,0 +1,168 @@
+@media screen and (max-width: 600px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(20, 25px);
+        grid-template-rows: repeat(40, 25px);
+        margin: auto;
+    }
+
+        #container .logo {
+            display: grid;
+            grid-column: 1/5;
+            grid-row: 1/5;
+            background-image: url('../images/new-glasgow-logo.svg');
+            background-position: center;
+            background-size: 75px;
+            background-repeat: no-repeat;
+            background-color: #4c4036;
+        }
+
+        #container .city {
+            display: grid;
+            grid-column: 5/17;
+            grid-row: 1/5;
+            background-color: #4c4036;
+            width: 300px;
+            height: 100px;
+        }
+
+            .city h1 {
+                font-size: 24px;
+                color: white;
+                text-align: center;
+                padding-top: 10px;
+                margin: 0;
+            }
+
+            .city h3 {
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                margin: 0;
+            }
+
+        #container .social {
+            display: grid;
+            grid-column: 17/19;
+            grid-row: 1/5;
+            background-color: #4c4036;
+            width: 50px;
+            align-content: center;
+            padding: 5px;
+        }
+
+            .social img {
+                width: 35px;
+                height: 35px;
+                padding: 5px;
+            }
+        
+        #container .hamby {
+            display: grid;
+            grid-column: 19/21;
+            grid-row: 1/5;
+            background-color: #4c4036;
+            align-content: center;
+            padding: 5px;
+        }
+
+        #container .latestUpdateDate {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 5/7;
+            background-color: #977f6e;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            color: white;
+            padding-top: 15px;
+            text-align: center;
+            width: 100%;
+        }
+
+        #container .hero {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 7/15;
+            background-image: url('../images/ng-provost-small.jpg');
+            background-color: rgba(0, 0, 0, 0.3);
+            background-blend-mode: multiply;
+        }
+
+            .hero h1 {
+                color: white;
+                font-size: 18px;
+                text-align: right;
+                padding: 20px;
+                text-shadow: 2px 2px 4px #4c4036;
+            }
+
+        #container .join-button {
+            display: grid;
+            grid-column: 14/21;
+            grid-row: 11/15;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            color: white;
+            height: 25px;
+            padding: 10px;
+            padding-top: 18px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: 125px;
+            z-index: 1;
+        }
+
+        #container .join-button:hover {
+            background-color: #4c4036;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+    
+        #container .events {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 15/23;
+            background-image: url('../images/ng-riverfront-small.jpg');
+            border-top: 10px;
+            overflow: hidden;
+        }
+
+            .events h1 {
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                padding-top: 75px;
+                text-shadow: 2px 2px 4px #4c4036;
+            }
+
+            @keyframes scrollText {
+                0% {
+                  transform: translateX(100%);
+                }
+                100% {
+                  transform: translateX(0%);
+                }
+            }
+
+            .events h3 {
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                text-shadow: 2px 2px 4px #4c4036;
+                border: 1px dotted white;
+                animation: scrollText 10s linear;
+            }
+
+            .events a {
+                display: inline-block;
+                color: white;
+                text-decoration: none;
+            }
+        
+        #container .weather {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 23/31;
+        }
+}
