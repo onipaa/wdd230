@@ -4,7 +4,7 @@ const postalCode = 'B2H 1P9';
 // url for insomnia:
 // http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${postalCode}&aqi=no
 // Construct the weather API URL with the API key and postal code
-const apiUrl = `http://api.weatherapi.com/v1/current.json?key=3c7e43e662084aa8bb554106232506&q=B2H 1P9&aqi=no`;
+const apiUrl = `https://api.weatherapi.com/v1/current.json?key=3c7e43e662084aa8bb554106232506&q=B2H 1P9&aqi=no`;
 
 // Fetch weather data from the API
 fetch(apiUrl)
