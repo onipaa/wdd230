@@ -1,9 +1,12 @@
+body {
+
+}
+
 @media screen and (max-width: 600px) {
     #container {
         display: grid;
         grid-template-columns: repeat(20, 25px);
         grid-template-rows: repeat(40, 25px);
-        margin: auto;
     }
 
         #container .logo {
@@ -73,6 +76,7 @@
             background-color: #977f6e;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
             color: white;
+            margin-bottom: 10px;
             padding-top: 15px;
             text-align: center;
             width: 100%;
@@ -85,6 +89,7 @@
             background-image: url('../images/ng-provost-small.jpg');
             background-color: rgba(0, 0, 0, 0.3);
             background-blend-mode: multiply;
+            margin-bottom: 10px;
         }
 
             .hero h1 {
@@ -122,9 +127,10 @@
         #container .events {
             display: grid;
             grid-column: 1/21;
-            grid-row: 15/23;
+            grid-row: 15/24;
             background-image: url('../images/ng-riverfront-small.jpg');
             border-top: 10px;
+            margin-bottom: 10px;
             overflow: hidden;
         }
 
@@ -163,6 +169,60 @@
         #container .weather {
             display: grid;
             grid-column: 1/21;
-            grid-row: 23/31;
+            grid-row: 24/56;
+            background-color: #E0DBCF;
+            background-image: url('../images/ng-weather-small.svg');
+            background-repeat: no-repeat;
+            background-size: 500px;
+            border-radius: 16px;
+            height: 800px;
         }
+
+            .weather .wind {
+                display: grid;
+                grid-column: 3/8;
+                grid-row: 23/34;
+                font-size: 18px;
+                position: relative;
+                z-index: 99;
+                width: 100px;
+                height: 50px;
+                color: white;
+                text-shadow: 2px 2px 4px #4c4036;
+            }
+
+            .weather .feels {
+                display: grid;
+                grid-column: 10/20;
+                grid-row: 26/34;
+                font-size: 20px;
+                position: relative;
+                z-index: 99;
+                width: 100px;
+                height: 50px;
+            }
+
+            .weather .temperature {
+                display: grid;
+                grid-column: 1/21;
+                grid-row: 45/50;
+                font-size: 38px;
+                position: relative;
+                z-index: 99;
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 4px #4c4036;
+            }
+
+            .weather .description {
+                display: grid;
+                grid-column: 1/21;
+                grid-row: 50/53;
+                font-size: 40px;
+                position: relative;
+                z-index: 99;
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 4px #4c4036;
+            }
 }
