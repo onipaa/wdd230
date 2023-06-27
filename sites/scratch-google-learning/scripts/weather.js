@@ -19,11 +19,6 @@ fetch(apiUrl)
     const feelsLike = data.current.feelslike_f;
     const windGusts = data.current.gust_mph;
 
-    /*
-    const locationDiv = document.getElementById("location");
-    locationDiv.textContent = `Location: ${locationName}`;
-    */
-
     const windDiv = document.getElementById("wind");
     windDiv.textContent = `Windspeed: ${wind} MPH @${direction}, Wind Gusts ${windGusts} MPH`;
 
@@ -34,15 +29,7 @@ fetch(apiUrl)
     temperatureDiv.textContent = `Actual Temperature: ${temperature} °F`;
 
     const feelsDiv = document.getElementById("feels");
-    feelsDiv.textContent = `It Feels Like\r ${feelsLike}°F`;
-
-    // my brain just exploded.
-    // this was a lot to "figure out."
-    // first off, this is my first time seeing the api.weatherapi.com program
-    // I had to tinker with that
-    // secondly, I am more of a Database, system admin, bash, python, sql, plsql guy
-    // but patterns are patterns and we techies persist till we get it
-    // I hope that's not a stupid approach
+    feelsDiv.textContent = `${feelsLike}°F`;
 
     console.log(locationName, temperature, description, wind, direction, feelsLike, windGusts);
   })

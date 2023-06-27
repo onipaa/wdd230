@@ -1,0 +1,34 @@
+[
+    {
+        "company_id": "E55F1CBD-B574-4D53-A4CE-D2AB82ED4728",
+        "company_name": "Maritime Design Creative, Digital Solutions Inc.",
+        "slogan": "Fully Managed Websites",
+        "contacts": [
+            {
+                "name": "Fred Flintstone",
+                "cell_phone": "+1 (902) 695-5695",
+                "email": "fred.flintstone@maritimedesign.ca"
+            }
+        ],
+        "web-address": "https://maritimedesign.ca/",
+        "membership_level": "Gold",
+        "logos": "maritime-design-logo",
+        "medials": "gold"
+    },
+    {
+        "company_id": "6B7135DA-7329-421B-8CA6-DF4F60025807",
+        "company_name": "Tilly's Kitchen",
+        "slogan": "Generations of Love",
+        "contacts": [
+            {
+                "name": "Barney Rubble",
+                "cell_phone": "+1 (902) 695-2880",
+                "email": "barney.rubble@tillyskitchen.ca"
+            }
+        ],
+        "web-address": "https://tillyskitchen.ca/",
+        "membership_level": "Gold",
+        "logos": "tk-logo",
+        "medials": "silver"
+    }
+]
