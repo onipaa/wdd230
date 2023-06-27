@@ -37,3 +37,6 @@ fetch(apiUrl)
     // Handle any errors that occur during the API request
     console.error("Error fetching weather data:", error);
   });
+
+
+//https://onipaa.github.io/wdd230//sites/scratch-google-learning/index.html

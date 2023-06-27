@@ -3,32 +3,72 @@
         "company_id": "E55F1CBD-B574-4D53-A4CE-D2AB82ED4728",
         "company_name": "Maritime Design Creative, Digital Solutions Inc.",
         "slogan": "Fully Managed Websites",
-        "contacts": [
-            {
-                "name": "Fred Flintstone",
-                "cell_phone": "+1 (902) 695-5695",
-                "email": "fred.flintstone@maritimedesign.ca"
-            }
-        ],
-        "web-address": "https://maritimedesign.ca/",
+        "contact_name": "Fred Flintstone",
+        "contact_phone": "+1 (902) 695-5695",
+        "contact_email": "fred.flintstone@maritimedesign.ca",
+        "web_address": "https://maritimedesign.ca/",
         "membership_level": "Gold",
-        "logos": "maritime-design-logo",
-        "medials": "gold"
+        "logos": "maritime-design-logo.svg",
+        "medals": "gold"
     },
     {
         "company_id": "6B7135DA-7329-421B-8CA6-DF4F60025807",
         "company_name": "Tilly's Kitchen",
         "slogan": "Generations of Love",
-        "contacts": [
-            {
-                "name": "Barney Rubble",
-                "cell_phone": "+1 (902) 695-2880",
-                "email": "barney.rubble@tillyskitchen.ca"
-            }
-        ],
-        "web-address": "https://tillyskitchen.ca/",
+        "contact_name": "Barney Rubble",
+        "contact_phone": "+1 (902) 695-2880",
+        "contact_email": "barney.rubble@tillyskitchen.ca",
+        "web_address": "https://tillyskitchen.ca/",
+        "membership_level": "Silver",
+        "logos": "tk-logo.svg",
+        "medals": "silver"
+    },
+    {
+        "company_id": "1E0DD0C9-F064-4153-A2B1-6C38BDF89815",
+        "company_name": "Fred's Bowling",
+        "slogan": "Yabba Dabba Do!",
+        "contact_name": "Fred Flintstone",
+        "contact_phone": "+1 (902) 555-1234",
+        "contact_email": "fred@bedrock-lanes.com",
+        "web_address": "https://bedrock-lanes.com/",
+        "membership_level": "Bronze",
+        "logos": "fred-logo.png",
+        "medals": "bronze"
+    },
+    {
+        "company_id": "99DD9DB2-C1BE-4668-98AB-39A6DE7928F7",
+        "company_name": "Barney's Celebrity Roasts & Other Insults",
+        "slogan": "Ah, heh, heh, heh.",
+        "contact_name": "Barney Rubble",
+        "contact_phone": "+1 (902) 555-2345",
+        "contact_email": "barney.rubble@celebrity-roasts.com",
+        "web_address": "https://celebrity-roasts.com/",
         "membership_level": "Gold",
-        "logos": "tk-logo",
-        "medials": "silver"
+        "logos": "barney-logo.png",
+        "medals": "gold"
+    },
+    {
+        "company_id": "D6995581-7EF1-4816-A9CE-8385962BCBC8",
+        "company_name": "Wilma's Home Cookin'",
+        "slogan": "Now Fred!",
+        "contact_name": "Wilma Flintstone",
+        "contact_phone": "+1 (902) 555-3456",
+        "contact_email": "wilma@home-cookin.com",
+        "web_address": "https://home-cookin.com/",
+        "membership_level": "Free",
+        "logos": "caveman-biff-logo.png",
+        "medals": "free"
+    },
+    {
+        "company_id": "B76D4C80-E7F4-4EB2-AF1B-195B1E3E68F1",
+        "company_name": "Betty's Yoga Studio",
+        "slogan": "Now, calm yourself Barney.",
+        "contact_name": "Betty Rubble",
+        "contact_phone": "+1 (902) 555-4567",
+        "contact_email": "betty@yoga.r.us",
+        "web_address": "https://yoga.r.us/",
+        "membership_level": "Silver",
+        "logos": "betty-logo.png",
+        "medals": "silver"
     }
 ]
