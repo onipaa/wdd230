@@ -1,4 +1,4 @@
-@media screen and (max-width: 510px) {
+@media screen and (min-width: 600px) and (max-width: 999) {
     #container {
         display: grid;
         grid-template-columns: repeat(20, 25px);
