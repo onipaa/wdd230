@@ -56,7 +56,7 @@
         "contact_email": "wilma@home-cookin.com",
         "web_address": "https://home-cookin.com/",
         "membership_level": "Free",
-        "logos": "caveman-biff-logo.png",
+        "logos": "wilma-logo.png",
         "medals": "free"
     },
     {
@@ -70,5 +70,53 @@
         "membership_level": "Silver",
         "logos": "betty-logo.png",
         "medals": "silver"
+    },
+    {
+        "company_id": "EF58F66D-6F31-42E0-A2F3-567EDEBA5957",
+        "company_name": "Captain Caveman's Security",
+        "slogan": "Unga Bunga!",
+        "contact_name": "Caveman Biff",
+        "contact_phone": "+1 (902) 555-5678",
+        "contact_email": "cavey@security.r.us",
+        "web_address": "https://security.r.us/",
+        "membership_level": "Free",
+        "logos": "caveman-biff-logo.png",
+        "medals": "free"
+    },
+    {
+        "company_id": "E45468E3-ECC0-44FF-844C-96B19AB9E7EA",
+        "company_name": "Mystery Inc.",
+        "slogan": "Would You Do It For a Scooby Snack?",
+        "contact_name": "The Gang",
+        "contact_phone": "+1 (902) 555-6789",
+        "contact_email": "gang@mystery-inc.com",
+        "web_address": "https://mystery-inc.com",
+        "membership_level": "Gold",
+        "logos": "the-gang-logo.png",
+        "medals": "gold"
+    },
+    {
+        "company_id": "8B092AD5-A6CC-4ADF-8B78-BC61D0DDC258",
+        "company_name": "Scoobs Doughnutery",
+        "slogan": "Ruby, Ruby, Roo!",
+        "contact_name": "Scooby",
+        "contact_phone": "+1 (902) 555-7890",
+        "contact_email": "scooby@yumyum.com",
+        "web_address": "https://yumyum.com",
+        "membership_level": "Free",
+        "logos": "scooby-logo.png",
+        "medals": "free"
+    },
+    {
+        "company_id": "07E25253-6D92-4C0A-BF1A-BF88DE6B8532",
+        "company_name": "New Glasgow Salvage",
+        "slogan": "Puppy Power!",
+        "contact_name": "Scrappy Doo",
+        "contact_phone": "+1 (902) 555-4321",
+        "contact_email": "mr.doo@junk.com",
+        "web_address": "https://junk.com",
+        "membership_level": "Gold",
+        "logos": "betty-logo.png",
+        "medals": "gold"
     }
 ]
