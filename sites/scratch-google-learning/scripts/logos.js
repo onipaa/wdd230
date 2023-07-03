@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Element with ID "spot1" not found in the document.');
         }
         
-        
         console.log(cardContainer)
         console.log(logoImage)
         console.log(companyHeading)

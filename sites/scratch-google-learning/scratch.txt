@@ -1,83 +1,3 @@
-@media only screen and (min-width: 200px) and (max-width: 599px) {
-    #container {
-        display: grid;
-        grid-template-columns: repeat(20, 25px);
-        grid-template-rows: repeat(125, 25px);
-    }
-
-        #container .logo {
-            display: grid;
-            grid-column: 1/5;
-            grid-row: 1/5;
-            background-color: #4c4036;
-            background-image: url('../images/new-glasgow-logo.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 75px;
-        }
-
-        #container .city {
-            display: grid;
-            grid-column: 5/17;
-            grid-row: 1/5;
-            background-color: #4c4036;
-            height: 100px;
-            width: 300px;
-        }
-
-            .city h1 {
-                color: white;
-                font-size: 24px;
-                margin: 0;
-                padding-top: 10px;
-                text-align: center;
-            }
-
-            .city h3 {
-                color: white;
-                font-size: 16px;
-                margin: 0;
-                text-align: center;
-            }
-
-        #container .social {
-            display: grid;
-            grid-column: 17/19;
-            grid-row: 1/5;
-            align-content: center;
-            background-color: #4c4036;
-            padding: 5px;
-            width: 50px;
-        }
-
-            .social img {
-                height: 35px;
-                padding: 5px;
-                width: 35px;
-            }
-        
-        #container .hamby {
-            display: grid;
-            grid-column: 19/21;
-            grid-row: 1/5;
-            align-content: center;
-            background-color: #4c4036;
-            padding: 5px;
-        }
-
-        #container .latestUpdateDate {
-            display: grid;
-            grid-column: 1/21;
-            grid-row: 5/7;
-            background-color: #977f6e;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-            color: white;
-            margin-bottom: 10px;
-            padding-top: 15px;
-            text-align: center;
-            width: 100%;
-        }
-
         #container .hero {
             display: grid;
             grid-column: 1/21;
@@ -331,20 +251,13 @@
                 z-index: 99;
             }
 
-                .spot2 > .card-container {
+                .spot2 .card-container {
                     align-items: center;
                     justify-content: center;
                     padding: 10px;
                     text-align: center;
 
                 }
-            
-            .spotlights .spot3 {
-                display: none;
-                height: 0px;
-                width: 0px;
-                z-index: 99;
-            }
 
         #container .contact {
             display: grid;
@@ -376,25 +289,3 @@
                 width: 100px;
                 margin-top: 5px;
             }
-        
-        #container .foot {
-            display: grid;
-            grid-row: 114/118;
-            background-color: #4c4036;
-            color: white;
-            text-align: center;
-            padding-top: 15px;
-            height: 100px;
-            width: 500px;
-        }
-              
-            .foot h1 {
-                font-size: 1.5em;
-                margin: 0;
-            }
-              
-            .foot p {
-                font-size: 1em;
-                margin: 0;
-            }
-}
