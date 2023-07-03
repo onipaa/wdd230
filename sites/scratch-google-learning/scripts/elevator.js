@@ -13,15 +13,13 @@ function checkBrowserWidth() {
     // if one wants to make sure they communicate properly.
     
     if (browserWidth >= 1000) {
-        const elevatorPitch = document.createElement('p');
-        elevatorPitch.textContent = 'Find out how to join our chamber of commerce. You don\'t know the power of the the Dark Side.';
 
-        const elevatorJoin = document.createElement('input');
-        elevatorJoin.type = 'button';
-        elevatorJoin.value = 'Join Us or Die!';
+        document.getElementById('elevator').innerHTML = `
+            <p>Luke, you do not yet realize your importance. You have only begun to discover your power. Join me, and I will complete your training. With our combined strength, we can end this destructive conflict and bring order to the galaxy. If you only knew the power of the Dark Side.</p>
+            <p><strong>Find out how to join our chamber of commerce.</strong></p>
+            <input type="button" value="Join Us or Die!">
+        `;
 
-        const elevatorPitchContainer = document.getElementById('elevatorPitch');
-        elevatorPitchContainer.appendChild(elevatorPitch);
-        elevatorPitchContainer.appendChild(elevatorJoin);
+        console.log ('Help Me Obi Wan.');
     }
 }
