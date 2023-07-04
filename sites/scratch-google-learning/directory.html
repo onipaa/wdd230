@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
+    <title>Home Page</title>
     <link rel="icon" href="./images/cookie.ico">
-    <link rel="stylesheet" href="./styles/vp-500px.css">
-    <link rel="stylesheet" href="./styles/base.css"
+    <link rel="stylesheet" type="text/css" href="./styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/vp-1000.css">
+    <link rel="stylesheet" type="text/css" href="./styles/vp-700px.css">
+    <link rel="stylesheet" type="text/css" href="./styles/vp-500px-directory.css">
 </head>
 <body id="container">
     <div class="logo"></div>
@@ -18,7 +20,15 @@
         <img src="./images/fb-48px.svg" alt="Facebook Icon" />
         <img src="./images/linked-in-48px.svg" alt="LinkedIn logo" />
     </div>
-    <div class="hamby">h</div>
-    <div class="latestUpdateDate"><span id="datetime"></span></div>    
+    <div class="hamby"></div>
+    <div class="latestUpdateDate"><span id="datetime"></span></div>
+    <div class="toggle">
+        <input style="display:none" class="toggleCards" id="toggleCards" type="checkbox" value=true>
+        <button id="toggleButton">Toggle Cards On/Off</button>
+    </div>
+    <div class="cardContainer"><div class="cards" id="cards"></div></div>
+    <div class="table" id="table"></div>
+    <script src="./scripts/directory.js"></script>
+    <script src="./scripts/dates.js"></script>
 </body>
 </html>
