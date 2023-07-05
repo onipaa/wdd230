@@ -1,0 +1,57 @@
+@media only screen and (min-width: 240px) and (max-width: 700px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(20, 25px);
+        grid-template-rows: repeat(900, 25px);
+    }
+
+    #myContent {
+        display: grid;
+        grid-column: 1/21;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    
+        #myContent h1 {
+            text-align: center;
+        }
+    
+        #myContent p {
+            text-align: left;
+        }
+    
+        #myContent .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    
+        .gallery img {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #container .foot {
+            display: grid;
+            grid-row: 886/9000 !important;
+            background-color: #4c4036;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            height: 100px;
+            width: 500px !important;
+        }
+                          
+            .foot h1 {
+                font-size: 1.5em;
+                margin: 0;
+            }
+                          
+            .foot p {
+                font-size: 1em;
+                margin: 0;
+            }
+}

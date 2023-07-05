@@ -1,8 +1,8 @@
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1400px) {
     #container {
         display: grid;
         grid-template-columns: repeat(56, 25px);
-        grid-template-rows: repeat(125, 25px);
+        grid-template-rows: repeat(78, 25px);
     }
 
         #container .logo {
@@ -530,10 +530,29 @@
         .table {
             padding-top: 25px;
             width: 1300px;
-            font-size: 18px;
+            font-size: 16px;
             margin-left: auto;
             margin-right: auto;
         }
+
+        
+            .table th, td {
+                border: 0.125px solid;
+            }
+    
+            .table .member-table {
+                table-layout: fixed;
+                font-size: 16px;
+                width: 100%;
+                padding: 0;
+            }
+    
+            .member-table td {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                word-wrap:break-word;
+            }
+        
                 
         #container .foot {
             display: grid;

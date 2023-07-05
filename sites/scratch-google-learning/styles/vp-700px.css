@@ -1,8 +1,8 @@
-@media only screen and (min-width: 650px) and (max-width: 950px) {
+@media only screen and (min-width: 650px) and (max-width: 1400px) {
     #container {
         display: grid;
         grid-template-columns: repeat(28, 25px);
-        grid-template-rows: repeat(125, 25px);
+        grid-template-rows: repeat(95, 25px);
     }
 
         #container .logo {
@@ -224,8 +224,8 @@
                 /* background-color: rgba(0, 0, 0, 0.3); */
                 font-family: 'Roboto', sans-serif;
                 color: white;
-                font-size: 24px;
-                left: 400px;
+                font-size: 20px;
+                left: 420px;
                 position: absolute;
                 text-align: center;
                 text-shadow: 2px 2px 4px #4c4036;
@@ -240,8 +240,8 @@
                 /* background-color: rgba(0, 0, 0, 0.3); */
                 color: white;
                 font-family: 'Roboto', sans-serif;
-                font-size: 24px;
-                left: 425px;
+                font-size: 20px;
+                left: 400px;
                 position: absolute;
                 text-align: center;
                 text-shadow: 2px 2px 4px #4c4036;
@@ -467,15 +467,6 @@
                 .member img {
                     height: 75px;
                 }
-
-        .table {
-            padding-top: 25px;
-            width: 700px;
-            font-size: 12px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
                         
         #container .foot {
             display: grid;
