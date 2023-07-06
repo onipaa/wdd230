@@ -15,13 +15,34 @@
     <div class="city">
         <h1>New Glasgow</h1>
         <h3>Chamber of Commerce</h3>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
+        </nav>
     </div>
     <div class="social">
         <img src="./images/fb-48px.svg" alt="Facebook Icon" />
         <img src="./images/linked-in-48px.svg" alt="LinkedIn logo" />
     </div>
-    <div class="hamby">h</div>
+    <div class="hamby" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    </div>
     <div class="latestUpdateDate"><span id="datetime"></span></div>
+    <nav id="dropdownMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="sign-up.html">Join Us</a></li>
+        </ul>
+    </nav>
     <div class="hero">
         <h1>Welcome to NewGlasgow</h1>
         <a href="join.html" class="join-button">Join the Chamber</a>
@@ -70,5 +91,6 @@
     <script src="./scripts/weather.js"></script>
     <script src="./scripts/logos.js"></script>
     <script src="./scripts/elevator.js"></script>
+    <script src="./scripts/hamby.js"
 </body>
 </html>

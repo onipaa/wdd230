@@ -24,6 +24,14 @@
             height: 100px;
             width: 300px;
         }
+        
+            .city .menu {
+                display: none;
+            }
+        
+        .hamby {
+            display: block;
+        }
 
             .city h1 {
                 color: white;

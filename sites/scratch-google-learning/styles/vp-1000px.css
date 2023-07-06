@@ -24,6 +24,37 @@
             height: 150px;
         }
 
+            .city .menu {
+                position: relative;
+                bottom: 0;
+                width: 100%;    
+                text-align: center;
+                text-decoration: none;
+                color: white;
+            }
+          
+                .menu ul {
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    padding: 0;
+                    text-decoration: none;
+                    color: white;
+                }
+            
+                .menu li {
+                    margin: 0 10px;
+                }
+            
+                .menu li::before {
+                    content: "";
+                }
+            
+                .menu a {
+                    color: white;
+                    text-decoration: none;
+                }
+
             .city h1 {
                 color: white;
                 font-size: 24px;
