@@ -5,6 +5,14 @@
         display: grid;
         grid-template-columns: repeat(20, 70px);
         grid-template-rows: repeat(20, 70px);
-        
+        background-color: #F6EDDD;
     }
+
+        #content .banner {
+            display: grid;
+            background-color: #35231B;
+            grid-column: 1/21;
+            grid-row: 1/2;
+            width: 1400px;
+        }
 }
