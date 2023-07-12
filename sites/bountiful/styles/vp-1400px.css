@@ -1,18 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Fredoka:wght@300;400;500;600;700&display=swap');
-
-@media only screen and (min-width: 1400px;) {
+@media only screen and (min-width: 1400px) {
     #content {
         display: grid;
         grid-template-columns: repeat(20, 70px);
         grid-template-rows: repeat(20, 70px);
-        background-color: #F6EDDD;
+        margin: auto;
+        width: 1400px;
     }
 
         #content .banner {
             display: grid;
-            background-color: #35231B;
             grid-column: 1/21;
             grid-row: 1/2;
+            background-color: #35231B;
+            width: 1400px;
+            z-index: 98;
+        }
+
+        #content .logo {
+            display: grid;
+            grid-column: 1/4;
+            grid-row: 1/4;
+            background-image: url('../images/logo.svg');
+            background-size: 140px;
+            background-repeat: no-repeat;
+            border-top: 25px;
+            margin-left: 15px;
+            margin-top: 15px;
+            z-index: 99;
+        }
+
+        #content .hero {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 2/16;
+            background-image: url('../images/index-bg-1400px.jpg');
+            background-size: cover;
+        }
+
+            .hero > .moniker {
+                display: grid;
+                grid-column: 8/14;
+                grid-row: 7/12;
+                color: white;
+                height: 350px;
+                text-align: center;
+                width: 640px;
+                z-index: 99;
+            }
+
+                .moniker h1 {
+                    padding-top: 100px;
+                    margin-bottom: -25px;
+                    margin-top: 0;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                }
+
+                .moniker h3 {
+                    margin-top: -75px;
+                    margin-bottom: 0;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                }
+
+        #content .contact {
+            display: grid;
+            grid-column: 1/5;
+            grid-row: 16/20;
+            background-color: #F6EDDD;
+            width: 280px;
+            height: 280px;
+            padding-top: 25px;
+        }
+
+            .contact h3 {
+                font-size: 20px;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+                margin-left: 25px;
+                margin-bottom: -75px;
+            }
+
+            .contact p {
+                font-size: 12px;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+                margin-left: 25px;
+                margin-top: -100px;
+            }
+
+        #content .social {
+            display: grid;
+            grid-column: 17/21;
+            grid-row: 16/20;
+            background-color: #F6EDDD;
+            width: 280px;
+            height: 280px;
+        }
+
+            .social .icons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 25px;
+            }
+
+                .icons a {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+                
+                .icons img {
+                    width: 70px;
+                    height: 70px;
+                    margin-right: 25px;
+                }
+
+        #content .weather {
+            display: grid;
+            grid-column: 5/17;
+            grid-row: 16/20;
+            background-color: #F6EDDD;
+            margin: auto;
+            width: 840px;
+            height: 280px;
+        }
+
+            .weather .widget {
+                background-image: url('../images/weather-widget.svg');
+                background-size: 820px;
+                background-repeat: no-repeat;
+                width: 840px;
+                height: 270px;
+            }
+        
+        #content .footer {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 20/21;
+            background-color: #35231B;
+            color: white;
             width: 1400px;
         }
+
+            .footer h1 {
+                font-size: 24px;
+                font-weight: 500;
+            }
 }
