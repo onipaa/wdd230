@@ -17,6 +17,9 @@
                 <h3>Fresh, Healtful Nourishment</h3>
             </div>
         </div>
+        <div class="hero-bottom">
+            bottom
+        </div>
         <div class="contact">
             <h3>Bountiful Foods Inc</h3>
             <p>123 Elm Street, Carlsbad<br>
@@ -27,18 +30,35 @@
         </div>
         <div class="social">
             <div class="icons">
-                <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook.svg" width="35" height="35" alt="Facebook"></a>
-                <a href="https://www.linkedin.com" target="_blank"><img src="./images/linkedin.svg" width="35" height="35" alt="LinkedIn"></a>
-                <a href="https://twitter.com" target="_blank"><img src="./images/twitter.svg" width="35" height="35" alt="Twitter"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.svg" width="35" height="35" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="https://www.facebook.com/"><img src="./images/facebook.svg" width="35" height="35" alt="Facebook"></a>
+                <a href="https://www.linkedin.com" target="https://www.linkedin.com/authwall?trk=qf&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2F"><img src="./images/linkedin.svg" width="35" height="35" alt="LinkedIn"></a>
+                <a href="https://twitter.com" target="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><img src="./images/twitter.svg" width="35" height="35" alt="Twitter"></a>
+                <a href="https://www.instagram.com" target="https://www.instagram.com/"><img src="./images/instagram.svg" width="35" height="35" alt="Instagram"></a>
             </div>
         </div>             
         <div class="weather">
-            <div class="widget"></div>
+            <div class="container1">
+                <div class="widget1"></div>
+                <div class="widget2"></div>
+                <div class="widget3"></div>
+            </div>
         </div>
         <div class="footer">
             <h1 style="text-align: center;">&copy; <span id="copyrightYear"></span> .:|:. John M Harper .:|:. Utah</h1>
         </div>
+
+        <div id="current-location"></div>
+        <div id="current-weather-info"></div>
         <script src="./scripts/dates.js" defer></script>
+        <script src="./scripts/weather.js" defer></script>
     </body>
 </html>
+
+<!-- api: b15613884073eaa68eed10b81db6f97d -->
+<!-- lat: 33.1581 lon: 117.3506-->
+<!-- https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key} -->
+<!-- https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key} -->
+<!-- https://api.openweathermap.org/data/2.5/weather?lat=33.1581&lon=117.3506&appid=b15613884073eaa68eed10b81db6f97d -->
+<!-- http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key} -->
+<!-- http://api.openweathermap.org/geo/1.0/direct?q=carlsbad,ca,usa&appid=b15613884073eaa68eed10b81db6f97d -->
+<!-- http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API key} -->
