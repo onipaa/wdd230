@@ -1,39 +1,93 @@
-const apiKey = '3c7e43e662084aa8bb554106232506';
-const postalCode = 'B2H 1P9';
+function getCoordinates() {
+    const apiKey = 'b15613884073eaa68eed10b81db6f97d';
+    const cityName = 'New Glasgow';
+    const stateCode = 'Nova Scotia';
+    const countryCode = 'CA';
 
-// url for insomnia:
-// http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${postalCode}&aqi=no
-// Construct the weather API URL with the API key and postal code
-const apiUrl = `https://api.weatherapi.com/v1/current.json?key={apiKey}}&q={postalCode}&aqi=no`;
+    const apiUrlLocation = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${apiKey}`;
 
-// Fetch weather data from the API
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    // Extract the desired weather information from the response
-    const locationName = data.location.name;
-    const temperature = data.current.temp_f;
-    const description = data.current.condition.text.toUpperCase();
-    const wind = data.current.wind_mph;
-    const direction = data.current.wind_dir;
-    const feelsLike = data.current.feelslike_f;
-    const windGusts = data.current.gust_mph;
+    return fetch(apiUrlLocation)
+        .then(response => response.json())
+        .then(data => {
+            const latValue = data[0].lat;
+            const lonValue = data[0].lon;
+            return {
+                lat: latValue,
+                lon: lonValue
+            };
+        });
+}
 
-    const windDiv = document.getElementById("wind");
-    windDiv.textContent = `Windspeed: ${wind} MPH @${direction}, Wind Gusts ${windGusts} MPH`;
+function convertEpochToHumanReadable(epochTimestamp) {
+    const milliseconds = epochTimestamp * 1000;
+    const dateObject = new Date(milliseconds);
+    const options = {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+    };
+    return dateObject.toLocaleDateString(undefined, options);
+}
 
-    const descriptionDiv = document.getElementById("description");
-    descriptionDiv.textContent = `The weather is: ${description}`;
 
-    const temperatureDiv = document.getElementById("temperature");
-    temperatureDiv.textContent = `Actual Temperature: ${temperature} °F`;
+function degreesToDirection(degrees) {
+  const directions = ['North', 'North East', 'East', 'South Eeast', 'South', 'South West', 'West', 'North West'];
+  degrees = (degrees % 360 + 360) % 360;
+  const index = Math.round(degrees / 45) % 8;
 
-    const feelsDiv = document.getElementById("feels");
-    feelsDiv.textContent = `${feelsLike}°F`;
+  return directions[index];
+}
 
-    console.log(locationName, temperature, description, wind, direction, feelsLike, windGusts);
-  })
-  .catch(error => {
-    // Handle any errors that occur during the API request
-    console.error("Error fetching weather data:", error);
-  });
+function getWeather(lat, lon) {
+    const apiKey = 'b15613884073eaa68eed10b81db6f97d';
+    const cityName = 'New Glasgow';
+    const stateCode = 'Nova Scotia';
+    const countryCode = 'CA';
+
+    const apiUrlWeather = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=hourly,minutely&appid=${apiKey}`;
+
+    console.log(apiUrlWeather)
+
+    fetch(apiUrlWeather)
+        .then(response => response.json())
+        .then(data => {
+            const currentDate = data.current.dt;
+            const currentDateHuman = convertEpochToHumanReadable(currentDate);
+            const currentTemperature = data.current.temp;
+            const currentWindChillTemp = data.current.feels_like;
+            const currentHumidity = data.current.humidity;
+            const currentBarometricPressure = data.current.pressure;
+            const currentWindSpeed = data.current.wind_speed;
+            const currentWeatherDescription = data.current.weather[0].description;
+            const currentWeatherIcon = data.current.weather[0].main;
+            const currentWindDirection = degreesToDirection(data.current.wind_deg);
+
+            const windDiv = document.getElementById("wind");
+            windDiv.textContent = `Wind: ${currentWindSpeed} MPH ${currentWindDirection}`;
+    
+            const descriptionDiv = document.getElementById("description");
+            descriptionDiv.textContent = `The weather is: ${currentWeatherDescription}`;
+    
+            const temperatureDiv = document.getElementById("temperature");
+            temperatureDiv.textContent = `Actual Temperature: ${currentTemperature} °F`;
+    
+            const feelsDiv = document.getElementById("feels");
+            feelsDiv.textContent = `${currentWindChillTemp}°F`;
+    
+            console.log(currentDateHuman);
+            console.log(currentTemperature);
+            console.log(currentWindSpeed);
+            console.log(currentWindDirection);
+        })
+        .catch(error => {
+            console.log('An error occurred while fetching weather data:', error);
+        });
+}
+
+getCoordinates()
+    .then(coordinates => {
+        console.log(coordinates.lat);
+        console.log(coordinates.lon);
+
+        getWeather(coordinates.lat, coordinates.lon)
+    });

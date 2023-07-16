@@ -10,11 +10,11 @@ toggleButton.addEventListener('click', function() {
     if (toggleCardsCheckbox.checked) {
         displayCards();
         removeTable();
-        cardsContainer.style.display = 'block';
+        cardContainer.style.display = 'block';
     } else {
         displayTable();
         removeCards();
-        cardsContainer.style.display = 'none';
+        cardContainer.style.display = 'none';
     }
 });
 
@@ -108,6 +108,18 @@ function displayTable() {
             // Append the table to the tableDiv
             tableDiv.innerHTML = '';
             tableDiv.appendChild(table);
+
+            // Create the footer element
+            const footer = document.createElement('footer');
+            footer.classList.add('foot');
+            footer.id = 'foot';
+            footer.innerHTML = `
+                <h1 style="text-align: center;">&copy; <span id="copyrightYear"></span> .:|:. John M Harper .:|:. Utah</h1>
+                <p>Last Updated&nbsp;<span id="lastUpdatedDate"></span></p>
+            `;
+
+            // Append the footer after the table
+            tableDiv.appendChild(footer);
         })
         .catch(error => {
             console.error('Error fetching members data:', error);
