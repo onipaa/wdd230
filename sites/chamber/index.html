@@ -1,67 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Chamber Home</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/large.css">
-    </head>
-    <body id="contentWrapper">
-        <header id="top-nav">
-            <div class="logo">
-                <img src="images/new-glasgow-logo.svg" alt="New Glasgow Logo">
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" href="./images/cookie.ico">
+    <link rel="stylesheet" type="text/css" href="./styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/vp-1000px.css">
+    <link rel="stylesheet" type="text/css" href="./styles/vp-700px.css">
+    <link rel="stylesheet" type="text/css" href="./styles/vp-500px.css">
+</head>
+<body id="container">
+    <div class="logo"></div>
+    <div class="city">
+        <h1>New Glasgow</h1>
+        <h3>Chamber of Commerce</h3>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="social">
+        <img src="./images/fb-48px.svg" alt="Facebook Icon" />
+        <img src="./images/linked-in-48px.svg" alt="LinkedIn logo" />
+    </div>
+    <div class="hamby" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
 
-            <div class="banner">
-                <h1>New Glasgow</h1>
-                <h3>Chamber of Commerce</h3>
-            </div>
-
-            <div class="social">
-                <img src="images/fb-128px.svg" alt="fb social media">
-                <img src="images/linked-in.svg" alt="fb social media">
-            </div>
-
-            <nav>
-                <div id="hamburger" onclick="toggleMenu()">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <ul id="menu">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Discover</a></li>
-                  <li><a href="#">Directory</a></li>
-                  <li><a href="#">Join</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-
-            <div class="date">
-                <span id="datetime"></span>
-            </div>
-        </header>
-        <main class="main">
-            <div class="spotlights">
-                Spotlights
-                <div class="spot1">Spotlight 1</div>
-                <div class="spot2">Spotlight 2</div>
-                <div class="spot3">Spotlight 3</div>
-            </div>
-            <div class="contact">
-                Social Media Contact
-            </div>
-        </main>
-        <footer class="foot">
-            <h1 style="text-align: center;">&copy; <span id="copyrightYear"></span> .:|:. John M Harper .:|:. Utah</h1>
-            <p>Last Updated&nbsp;<span id="lastUpdateDate"></span></p>
-        </footer>
-        <script src="scripts/dates.js"></script>
-        <script src="scripts/hamburger.js"></script>
-    </body>
+    <div class="latestUpdateDate"><span id="datetime"></span></div>
+    <nav id="dropdownMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="sign-up.html">Join Us</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to NewGlasgow</h1>
+        <a href="sign-up.html" class="join-button" onclick="location.href='sign-up.html';">Join the Chamber</a>
+    </div>
+    <div class="elevator" id="elevatorPitch"></div>
+    <div class="events">
+        <div>
+            <h1>Join us at the Riverfront Jubilee</h1>
+            <h3>August 4-6, 2023 .:|<a href="https://thejubilee.ca/">  Learn More Here  </a>|:.</h3>
+        </div>
+    </div>
+    <div class="weather">
+        <div class="wind" id="wind"></div>
+        <div class="feels" id="feels"></div>
+        <div class="temperature" id="temperature"></div>
+        <div class="description" id="description"></div>
+    </div>
+    <div class="news">
+        <h1><a href='https://www.saltwire.com/atlantic-canada/news/pictou-county-archery-club-shoots-straight-into-provincials-100866862/#:~:text=PICTOU%20%2D%20The%20Northumberland%20Strait%20Shooters,postponing%20the%20originally%20scheduled%20event.'>Pictou County Archery Club Shoots Straight Into Provincials</a></h1>
+        <p>Sarah Jordan | Posted: June 22, 2023, 3:45 p.m. | Updated: June 22, 2023, 4:03 p.m.</p>
+        <P>What was supposed to be just a fun day of shooting turned into provincials, due to weather and the recent fire and woods bans postponing the originally scheduled event. NSSAC was founded in 2010 and has approximately 25 active members at the moment. They mainly focus on 3D shooting, however, due to the advantage of new venues to shoot at, they are starting to do more target shooting and field shooting.</P>
+    </div>
+    <div class="spotlights">
+        <div class="spot1" id="spot1"></div>
+        <div class="spot2" id="spot2"></div>
+        <div class="spot3" id="spot3"></div>
+    </div>
+    <div class="elevator" id="elevator"></div>
+    <div class="contact">
+        <div class="bottomLogo">
+            <img src="./images/new-glasgow-logo.svg" alt="NG Logo" />
+        </div>
+        <div class="contactUs">
+            <h1>New Glasgow</h1>
+            <h3>Chamber of Commerce</h3>
+            <p>Nova Scotia, Canada</p>
+            <p>webmaster@onipaa.github.io</p>
+            <p>+1 (801) 822-1147</p>
+        </div>
+    </div>
+    <footer class="foot">
+        <h1 style="text-align: center;">&copy; <span id="copyrightYear"></span> .:|:. John M Harper .:|:. Utah</h1>
+        <p>Last Updated:&nbsp;<span id="lastUpdatedDate"></span></p>
+    </footer>
+    <script src="./scripts/dates.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/logos.js"></script>
+    <script src="./scripts/elevator.js"></script>
+    <script src="./scripts/hamby.js"></script>
+</body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NG Chamber Directory</title>
+    <link rel="icon" href="./images/cookie.ico">
+    <link rel="stylesheet" type="text/css" href="./styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/vp-1000px.css">
+    <link rel="stylesheet" type="text/css" href="./styles/vp-700px.css">
+    <link rel="stylesheet" type="text/css" href="./styles/vp-500px.css">
+</head>
+<body id="container">
+    <div class="logo"></div>
+    <div class="city">
+        <h1>New Glasgow</h1>
+        <h3>Chamber of Commerce</h3>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="social">
+        <img src="./images/fb-48px.svg" alt="Facebook Icon" />
+        <img src="./images/linked-in-48px.svg" alt="LinkedIn logo" />
+    </div>
+    <div class="hamby" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <nav id="dropdownMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="sign-up.html">Join Us</a></li>
+        </ul>
+    </nav>
+    <div class="latestUpdateDate"><span id="datetime"></span></div>
+    <div class="toggle">
+        <input style="display:none" class="toggleCards" id="toggleCards" type="checkbox" value=true>
+        <button id="toggleButton">Toggle Cards On/Off</button>
+    </div>
+    <div class="cardContainer"><div class="cards" id="cards"></div></div>
+    <div class="table" id="table"></div>
+    <script src="./scripts/directory.js"></script>
+    <script src="./scripts/dates.js"></script>
+    <script src="./scripts/hamby.js"></script>
+</body>
+</html>
