@@ -1,4 +1,4 @@
-function getCoordinates() {
+async function getCoordinates() {
     const apiKey = 'b15613884073eaa68eed10b81db6f97d';
     const cityName = 'New Glasgow';
     const stateCode = 'Nova Scotia';
@@ -6,16 +6,14 @@ function getCoordinates() {
 
     const apiUrlLocation = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${apiKey}`;
 
-    return fetch(apiUrlLocation)
-        .then(response => response.json())
-        .then(data => {
-            const latValue = data[0].lat;
-            const lonValue = data[0].lon;
-            return {
-                lat: latValue,
-                lon: lonValue
-            };
-        });
+    const response = await fetch(apiUrlLocation);
+    const data = await response.json();
+    const latValue = data[0].lat;
+    const lonValue = data[0].lon;
+    return {
+        lat: latValue,
+        lon: lonValue
+    };
 }
 
 function convertEpochToHumanReadable(epochTimestamp) {
@@ -31,11 +29,11 @@ function convertEpochToHumanReadable(epochTimestamp) {
 
 
 function degreesToDirection(degrees) {
-  const directions = ['North', 'North East', 'East', 'South Eeast', 'South', 'South West', 'West', 'North West'];
-  degrees = (degrees % 360 + 360) % 360;
-  const index = Math.round(degrees / 45) % 8;
+    const directions = ['North', 'North East', 'East', 'South Eeast', 'South', 'South West', 'West', 'North West'];
+    degrees = (degrees % 360 + 360) % 360;
+    const index = Math.round(degrees / 45) % 8;
 
-  return directions[index];
+    return directions[index];
 }
 
 function getWeather(lat, lon) {
@@ -64,16 +62,16 @@ function getWeather(lat, lon) {
 
             const windDiv = document.getElementById("wind");
             windDiv.textContent = `Wind: ${currentWindSpeed} MPH ${currentWindDirection}`;
-    
+
             const descriptionDiv = document.getElementById("description");
             descriptionDiv.textContent = `The weather is: ${currentWeatherDescription}`;
-    
+
             const temperatureDiv = document.getElementById("temperature");
             temperatureDiv.textContent = `Actual Temperature: ${currentTemperature} °F`;
-    
+
             const feelsDiv = document.getElementById("feels");
             feelsDiv.textContent = `${currentWindChillTemp}°F`;
-    
+
             console.log(currentDateHuman);
             console.log(currentTemperature);
             console.log(currentWindSpeed);

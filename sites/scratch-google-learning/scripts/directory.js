@@ -18,18 +18,18 @@ toggleButton.addEventListener('click', function() {
     }
 });
 
-function displayCards() {    
+function displayCards() {
     fetch('./data/members.json')
-    .then(response => response.json())
-    .then(data => {
-        const cardsDiv = document.getElementById('cards');
+        .then(response => response.json())
+        .then(data => {
+            const cardsDiv = document.getElementById('cards');
 
-        // Process the data and generate divs for each member
-        data.forEach((member, index) => {
-            const memberDiv = document.createElement('div');
-            memberDiv.classList.add('member');
+            // Process the data and generate divs for each member
+            data.forEach((member, index) => {
+                const memberDiv = document.createElement('div');
+                memberDiv.classList.add('member');
 
-            memberDiv.innerHTML = `
+                memberDiv.innerHTML = `
                 <img src="./images/${member.logos}" alt="${member.company_name} Logo">
                 <h3>${member.company_name}</h3>
                 <hr>
@@ -42,28 +42,28 @@ function displayCards() {
                 <p>Membership Level: ${member.membership_level}</p>
                 <img src="./images/${member.medals}.svg" alt="${member.membership_level} Medal">
             `;
-            cardsDiv.appendChild(memberDiv);
-        });
+                cardsDiv.appendChild(memberDiv);
+            });
 
-        const footer = document.createElement('footer');
-        footer.classList.add('foot');
-        footer.id = 'foot';
-        footer.innerHTML = `
+            const footer = document.createElement('footer');
+            footer.classList.add('foot');
+            footer.id = 'foot';
+            footer.innerHTML = `
             <h1 style="text-align: center;">&copy; <span id="copyrightYear"></span> .:|:. John M Harper .:|:. Utah</h1>
             <p>Last Updated&nbsp;<span id="lastUpdatedDate"></span></p>
         `;
 
-        // Append the footer after the last member card
-        const lastMemberCard = document.querySelector('.member:last-child');
-        if (lastMemberCard) {
-            lastMemberCard.insertAdjacentElement('afterend', footer);
-        } else {
-            cardsDiv.appendChild(footer);
-        }
-    })
-    .catch(error => {
-        console.error('Error fetching members data:', error);
-    });
+            // Append the footer after the last member card
+            const lastMemberCard = document.querySelector('.member:last-child');
+            if (lastMemberCard) {
+                lastMemberCard.insertAdjacentElement('afterend', footer);
+            } else {
+                cardsDiv.appendChild(footer);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching members data:', error);
+        });
 }
 
 function displayTable() {
@@ -139,7 +139,7 @@ function removeCards() {
 // Check the initial state of toggleCardsCheckbox and display cards if checked
 if (toggleCardsCheckbox.checked) {
     displayCards();
-    removteTable();
+    removeTable();
 } else {
     displayTable();
     removeCards();
