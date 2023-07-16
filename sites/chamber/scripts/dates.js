@@ -17,5 +17,5 @@ document.addEventListener("DOMContentLoaded", function() {
   // AARRGGHH!!!
   document.getElementById("datetime").innerHTML = mySuperDuperDate.toLocaleString("en-US", opt_almost_full);
   document.getElementById("copyrightYear").innerHTML = mySuperDuperDate.toLocaleString("en-US", opt_just_year);
-  document.getElementById("myDate").innerHTML = mySuperDuperDate.toLocaleString("en-US", opt_almost_full);
+  document.getElementById("lastUpdateDate").innerHTML = mySuperDuperDate.toLocaleString("en-US", opt_almost_full);
 });
