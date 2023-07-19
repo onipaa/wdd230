@@ -4,7 +4,7 @@ function getCoordinates() {
     const stateCode = 'NS';
     const countryCode = 'CA';
 
-    const apiUrlLocation = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${apiKey}`;
+    const apiUrlLocation = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${apiKey}`;
 
     return fetch(apiUrlLocation)
         .then(response => response.json())
