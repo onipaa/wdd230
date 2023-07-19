@@ -1,8 +1,8 @@
 async function getCoordinates() {
     const apiKey = 'b15613884073eaa68eed10b81db6f97d';
-    const cityName = 'New Glasgow';
-    const stateCode = 'NS';
-    const countryCode = 'CA';
+    const cityName = 'Carlsbad';
+    const stateCode = 'CA';
+    const countryCode = 'US';
 
     const apiUrlLocation = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${apiKey}`;
 
