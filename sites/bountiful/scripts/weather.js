@@ -1,4 +1,4 @@
-function getCoordinates() {
+async function getCoordinates() {
     const apiKey = 'b15613884073eaa68eed10b81db6f97d';
     const cityName = 'New Glasgow';
     const stateCode = 'NS';
@@ -6,16 +6,14 @@ function getCoordinates() {
 
     const apiUrlLocation = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${apiKey}`;
 
-    return fetch(apiUrlLocation)
-        .then(response => response.json())
-        .then(data => {
-            const latValue = data[0].lat;
-            const lonValue = data[0].lon;
-            return {
-                lat: latValue,
-                lon: lonValue
-            };
-        });
+    const response = await fetch(apiUrlLocation);
+    const data = await response.json();
+    const latValue = data[0].lat;
+    const lonValue = data[0].lon;
+    return {
+        lat: latValue,
+        lon: lonValue
+    };
 }
 
 function convertEpochToHumanReadable(epochTimestamp) {
