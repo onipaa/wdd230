@@ -52,6 +52,8 @@
             }
 
                 .moniker h1 {
+                    font-size: 64px;
+                    font-weight: 600;
                     padding-top: 100px;
                     margin-bottom: -25px;
                     margin-top: 0;
@@ -59,6 +61,8 @@
                 }
 
                 .moniker h3 {
+                    font-size: 24px;
+                    font-weight: 400;
                     margin-top: -75px;
                     margin-bottom: 0;
                     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -69,6 +73,7 @@
             grid-column: 1/21;
             grid-row: 16/30;
             background-color: #F5F2EA;
+            text-align: center;
         }
 
 
@@ -134,15 +139,19 @@
             grid-row: 17/30;
             background-color: #F5F2EA;
             margin: auto;
+            margin-top: 25px;
         }
 
             .weather .container1 {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+                grid-gap: 50px;
             }
 
                 .container1 .widget1 {
+                    display: flex;
+                    flex-direction: column;
                     background-image: url('../images/day.svg');
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -150,6 +159,47 @@
                     width: 350px;
                     height: 910px;
                 }
+
+                    .widget1 #latLon1 {
+                        text-align: center;
+                        padding-top: 25px;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget1 #date1 {
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget1 #location1 {
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: 400;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget1 #temperature1 {
+                        text-align: center;
+                        font-size: 48px;
+                        font-weight: 500;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget1 #feels1 {
+                        padding-top: 300px;
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget1 #description1 {
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget1 #wind1 {
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
 
                 .container1 .widget2 {
                     background-image: url('../images/day.svg');
@@ -160,14 +210,105 @@
                     height: 910px;
                 }
 
+
+                    .widget2 #latLon2 {
+                        text-align: center;
+                        padding-top: 25px;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget2 #date2 {
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget2 #location2 {
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: 400;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget2 #temperature2 {
+                        text-align: center;
+                        font-size: 48px;
+                        font-weight: 500;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget2 #feels2 {
+                        padding-top: 300px;
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget2 #description2 {
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget2 #wind2 {
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
                 .container1 .widget3 {
                     background-image: url('../images/day.svg');
                     background-size: contain;
                     background-repeat: no-repeat;
                     color: white;
+                    position: relative;
                     width: 350px;
                     height: 910px;
                 }
+
+                    .widget3 #latLon3 {
+                        text-align: center;
+                        padding-top: 25px;
+                    }
+
+                    .widget3 #date3 {
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget3 #location3 {
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: 400;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget3 #temperature3 {
+                        text-align: center;
+                        font-size: 48px;
+                        font-weight: 500;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget3 #feels3 {
+                        padding-top: 300px;
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget3 #description3 {
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    .widget3 #wind3 {
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+        #content .currentLocation {
+            display: grid;
+            grid-column: 5/17;
+            grid-row: 30/34;
+            width: 840px;
+            height: 280px;
+        }
         
         #content .footer {
             display: grid;
