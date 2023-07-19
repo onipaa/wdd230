@@ -308,6 +308,7 @@
             grid-row: 30/34;
             width: 840px;
             height: 280px;
+            background-image: url('../images/carlsbadCAMap.jpg');
         }
         
         #content .footer {
