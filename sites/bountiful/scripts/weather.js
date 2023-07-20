@@ -38,9 +38,9 @@ function degreesToDirection(degrees) {
 
 function getWeather1(lat, lon) {
     const apiKey = 'b15613884073eaa68eed10b81db6f97d';
-    const cityName = 'New Glasgow';
-    const stateCode = 'NS';
-    const countryCode = 'CA';
+    const cityName = 'Carlsbad';
+    const stateCode = 'CA';
+    const countryCode = 'US';
 
     const apiUrlWeather = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=hourly,minutely&appid=${apiKey}`;
 
@@ -154,9 +154,9 @@ function getWeather1(lat, lon) {
 
 function getWeather2(lat, lon) {
     const apiKey = 'b15613884073eaa68eed10b81db6f97d';
-    const cityName = 'New Glasgow';
-    const stateCode = 'NS';
-    const countryCode = 'CA';
+    const cityName = 'Carlsbad';
+    const stateCode = 'CA';
+    const countryCode = 'US';
 
     const apiUrlWeather = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=hourly,minutely&appid=${apiKey}`;
 
@@ -205,9 +205,9 @@ function getWeather2(lat, lon) {
 
 function getWeather3(lat, lon) {
     const apiKey = 'b15613884073eaa68eed10b81db6f97d';
-    const cityName = 'New Glasgow';
-    const stateCode = 'NS';
-    const countryCode = 'CA';
+    const cityName = 'Carlsbad';
+    const stateCode = 'CA';
+    const countryCode = 'US';
 
     const apiUrlWeather = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=hourly,minutely&appid=${apiKey}`;
 
