@@ -30,7 +30,16 @@ function convertEpochToHumanReadable(epochTimestamp) {
 
 function degreesToDirection(degrees) {
     const directions = ['North', 'North East', 'East', 'South Eeast', 'South', 'South West', 'West', 'North West'];
+    // I call the % a mod, but all the docs I read with JavaScript call it remainder.
+    // tomato thamato
+    // degrees % 360 gives the remainder of whatever degrees are passed in divided by 360
+    //    keeps the range from 0 to 359 degrees
+    // + 360 negates negative angles
+    // % 360 ensures that the range stays within 0 to 359
     degrees = (degrees % 360 + 360) % 360;
+
+    // index is degrees by 45 to represent N, NE, E, SE, S, SW, W, NW
+    // mod 8 keeps the result in the possible 8 directions
     const index = Math.round(degrees / 45) % 8;
 
     return directions[index];
