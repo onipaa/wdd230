@@ -97,54 +97,6 @@ function getWeather1(lat, lon) {
             const feelsDiv = document.getElementById("feels1");
             feelsDiv.textContent = `It feels like: ${currentWindChillTemp}°F`;
 
-            /* ************************************************************* */
-            // 2nd Day (feels kludgy)
-            /* ************************************************************* */
-            const latLon2Div = document.getElementById("latLon2");
-            latLon2Div.textContent = `Lat: ${lat} & Lon: ${lon}`;
-
-            const location2Div = document.getElementById("location2");
-            location2Div.textContent = `${cityName}, ${countryCode}`;
-
-            const wind2Div = document.getElementById("wind2");
-            wind2Div.textContent = `Windspeed: ${secondWind} MPH ${secondWindDirection}`;
-
-            const date2Div = document.getElementById("date2");
-            date2Div.textContent = `${secondDateHuman}`;
-
-            const description2Div = document.getElementById("description2");
-            description2Div.textContent = `The weather is: ${secondWeatherDescription}`;
-
-            const temperature2Div = document.getElementById("temperature2");
-            temperature2Div.textContent = `${secondTemperature} °F`;
-
-            const feels2Div = document.getElementById("feels2");
-            feels2Div.textContent = `It feels like: ${secondWindChillTemp}°F`;
-
-            /* ************************************************************* */
-            // 3rd Day (feels kludgy)
-            /* ************************************************************* */
-            const latLon3Div = document.getElementById("latLon3");
-            latLon2Div.textContent = `Lat: ${lat} & Lon: ${lon}`;
-
-            const location3Div = document.getElementById("location3");
-            location2Div.textContent = `${cityName}, ${countryCode}`;
-
-            const wind3Div = document.getElementById("wind3");
-            wind2Div.textContent = `Windspeed: ${currentWindSpeed} MPH ${currentWindDirection}`;
-
-            const date3Div = document.getElementById("date3");
-            date2Div.textContent = `${currentDateHuman}`;
-
-            const description3Div = document.getElementById("description3");
-            description2Div.textContent = `The weather is: ${currentWeatherDescription}`;
-
-            const temperature3Div = document.getElementById("temperature3");
-            temperature2Div.textContent = `${currentTemperature} °F`;
-
-            const feels3Div = document.getElementById("feels3");
-            feels2Div.textContent = `It feels like: ${currentWindChillTemp}°F`;
-
             console.log('Done with Weather Day 1');
         })
         .catch(error => {
@@ -227,7 +179,7 @@ function getWeather3(lat, lon) {
             console.log(thirdDateHuman);
 
             /* ************************************************************* */
-            // 2nd Day (feels kludgy)
+            // 3rd Day (feels kludgy)
             /* ************************************************************* */
             const latLon3Div = document.getElementById("latLon3");
             latLon3Div.textContent = `Lat: ${lat} & Lon: ${lon}`;
@@ -257,7 +209,6 @@ function getWeather3(lat, lon) {
             console.log('An error occurred while fetching weather data:', error);
         });
 }
-
 
 getCoordinates()
     .then(coordinates => {
