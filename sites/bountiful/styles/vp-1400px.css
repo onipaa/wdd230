@@ -419,21 +419,67 @@
                     width: 630px;
                 }
 
-        #content .table {
-            margin: 0 auto;
+        #content .main {
+            display: grid;
         }
+
+            .main .table-container {
+                display: grid;
+                grid-column: 4/18;
+                grid-row: 4/8;
+                margin: 0 auto;
+                padding-bottom: 50px;;
+                padding-top: 140px;
+                width: 960px;
+                height: 240px;
+            }
                   
-            .table th {
-                background-color: #f2f2f2;
+            .table-container .table th {
+                background-color: #35231B;
+                color: white;
                 padding: 10px;
             }
                   
             
             .table td {
                 padding: 10px;
-                border: 1px solid #ccc;
+                border: 1px solid #35231B;
+                color: black;
+            }
+
+            .main #calculateButton {
+                display: grid;
+                grid-column: 9/13;
+                grid-row: 8/9;
+                width: 280px;
+                color: white;
+                background-color: #35231B;
             }
         
+        .main .report-container {
+            display: grid;
+            grid-column: 4/18;
+            grid-row: 10/24;
+            padding-top: 50px;
+            width: 980px;
+        }
+
+            .report-container .selected-items {
+                display: grid;
+            }
+
+                .selected-items .ingredient-list {
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                    .ingredient-list li {
+                        margin-bottom: 5px;
+                    }
+
         #content .footer {
             display: grid;
             grid-column: 1/21;

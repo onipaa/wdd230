@@ -228,3 +228,6 @@ getCoordinates()
         getWeather2(coordinates.lat, coordinates.lon);
         getWeather3(coordinates.lat, coordinates.lon);
     });
+
+// SIDE NOTE:
+// Look into JSON.parse() to break stuff up into separate objects.

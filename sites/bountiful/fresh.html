@@ -16,26 +16,43 @@
                 <li><a class="active" href="fresh.html">Fresh Smoothies</a></li>
             </ul>
         </div>
-        <div class="logo"></div>
-        <main>
-            <table>
-                <tr>
-                    <th>Quantity</th>
-                    <th>Fruit</th>
-                </tr>
-                <tr>
-                    <td><input type="number" id="qty1"></td>
-                    <td><select id="fruitDropdown1"><option value="">Select a fruit</option></select></td>
-                </tr>
-                <tr>
-                    <td><input type="number" id="qty2"></td>
-                    <td><select id="fruitDropdown2"><option value="">Select a fruit</option></select></td>
-                </tr>
-                <tr>
-                    <td><input type="number" id="qty3"></td>
-                    <td><select id="fruitDropdown3"><option value="">Select a fruit</option></select></td>
-                </tr>
-            </table>
+        <div class="logo"><a href="index.html"></a></div>
+        <main class="main">
+            <div class="table-container">
+                <table class="table">
+                    <tr>
+                        <th>Quantity</th>
+                        <th>Fruit</th>
+                    </tr>
+                    <tr>
+                        <td>Input Quantity 1:&nbsp;&nbsp;&nbsp;<input type="number" id="qty1" placeholder="numeric values." size="250"></td>
+                        <td><select id="fruitDropdown1"><option value="">Select a fruit</option></select></td>
+                    </tr>
+                    <tr>
+                        <td>Input Quantity 2:&nbsp;&nbsp;&nbsp;<input type="number" id="qty2" placeholder="numeric values." size="250"></td>
+                        <td><select id="fruitDropdown2"><option value="">Select a fruit</option></select></td>
+                    </tr>
+                    <tr>
+                        <td>Input Quantity 3:&nbsp;&nbsp;&nbsp;<input type="number" id="qty3" placeholder="numeric values." size="250"></td>
+                        <td><select id="fruitDropdown3"><option value="">Select a fruit</option></select></td>
+                    </tr>
+                </table>
+            </div>
+
+            <button id="calculateButton">Calculate Nutrition</button>
+
+            <div id="report" class="report-container">
+                <div class="selected-items">
+                    <h2 class="centered-h2">Selected Items:</h2>
+                    <ul class="ingredient-list">
+                        <!-- The selected items will be populated here dynamically -->
+                    </ul>
+                </div>
+                <div class="total-nutrition">
+                    <h2 class="centered-h2">Total Nutrition:</h2>
+                    <!-- The total nutrition values will be populated here dynamically -->
+                </div>
+            </div>
         </main>
         <footer></footer>
         <script src="./scripts/smoothies.js"></script>

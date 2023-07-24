@@ -1,0 +1,90 @@
+Ok here is your to-do list to fix this up over the next week: 
+--------------------------------------------------------------------------------
+    *   make another div to be your Grid container that can be the child of the 
+        <body> element.
+            Then, we can use margin: auto to center your Grid. It's also good 
+            practice to limit the styling and functions of the <body> element. 
+            Something can't have margins if it doesn't have a parent element. (-1)
+    *   JS console errors (dates.js on Home is having an error on line 20)
+    *   Just a suggestion for future consideration, but you could have the 
+        widths as percentages, but also with max-width values to make the 
+        elements grow as the page width increases to reduce whitespace on mobile 
+        and tablet views * I'm not seeing the meet and greet banner on Mondays 
+        and Tuesdays
+    *   Move small to medium breakpoint to about 720px instead of about 651px.
+    *   missing alt text on some images, and just a couple of contrast issues 
+        with light brown text on medium brown background and vice versa (you can
+        ignore the contrast errors that are coming up for text that actually has
+        an image as the background because this tool doesn't know how to account 
+        for that). Home page layout and functionality is otherwise almost 
+        perfect! Directory page is perfect except for:
+    *   the menu code seems to have lost its CSS/JS (should be able to copy from 
+        Home)
+    *   mobile view for list, you will want to either display only some of the 
+        info or else wrap some of the fields to a second line per company. I 
+        actually think you might be able to just apply your medium CSS for the 
+        list also in the small view and get it to work that way. Same with your 
+        toggle button, it looks great on medium but is causing issues on small.
+    *   there is a shift to the right when the card container is hidden because 
+        it is still taking up some space in the layout. Try toggling this CSS 
+        to apply to cardContainer when you are on the List view: display: none; 
+
+Discover page:
+    *   same menu issue where you just need to apply the same code from Home 
+    *   needs a page visit timer using localStorage. Let me know if you need 
+        help with this. I liked your idea to add a mission story here. :) Form 
+        page:
+    *   on line 118, that styling needs to be in the CSS file * you will want 
+        an action attribute on your form to send them to another page (thanks.html) 
+        if they pass all validation * this page is not responsive, but I am not 
+        taking points off for that since you did all the extra stuff with the 
+        form JS. So, you don't need to fix it "for points". I know you know what
+        responsive layout means.
+    *   each field needs a label attribute
+    *   some HTML validation errors Contact page is missing but I know that will 
+        be simple. And you will want to remove console.log statements once 
+        everything is finished! Let me know if you need help with any of this. 
+        It's kind of a long list but you have most of the important functionality
+        down!
+
+    *   I'm not seeing the meet and greet banner on Mondays and Tuesdays (-3)
+    *   Move small to medium breakpoint to about 720px instead of about 651px. (-1)
+    *   missing alt text on some images, and just a couple of contrast issues 
+        with light brown text on medium brown background and vice versa (you can
+        ignore the contrast errors that are coming up for text that actually has
+        an image as the background because this tool doesn't know how to account
+        for that). (-2)
+        Home page layout and functionality is otherwise almost perfect! 
+
+Directory page is perfect except for:
+    *   the menu code seems to have lost its CSS/JS (should be able to copy from
+        Home) (-0)
+    *   mobile view for list, you will want to either display only some of the 
+        info or else wrap some of the fields to a second line per company. I 
+        actually think you might be able to just apply your medium CSS for the 
+        list also in the small view and get it to work that way. Same with your 
+        toggle button, it looks great on medium but is causing issues on small. (-0)
+    *   there is a shift to the right when the card container is hidden because 
+        it is still taking up some space in the layout. Try toggling this CSS to
+        apply to cardContainer when you are on the List view: display: none; (-1)
+
+Discover page:
+    *   same menu issue where you just need to apply the same code from Home (-0)
+    *   needs a page visit timer using localStorage. Let me know if you need help 
+        with this. (-5) I liked your idea to add a mission story here. :) Form 
+        page:
+    *   on line 118, that styling needs to be in the CSS file (-1)
+    *   you will want an action attribute on your form to send them to another 
+        page (thanks.html) if they pass all validation (-1)
+    *   this page is not responsive, but I am not taking points off for that
+        since you did all the extra stuff with the form JS. So, you don't need 
+        to fix it "for points". I know you know what responsive layout means. (-0)
+    *   each field needs a label attribute (-1) * some HTML validation errors (-1) 
+        Contact page is missing but I know that will be simple. And you will 
+        want to remove console.log statements once everything is finished! (-0) 
+        Let me know if you need help with any of this. It's kind of a long list
+        but you have most of the important functionality down! So I have this as 
+        82 but I told you it's a B+ site overall and most of these one pointers
+        are things that you know but ran out of time to tweak for now. I'm 
+        confident to put down an 87 for now and then you still have a week to get
+        it higher than that if you want to.
