@@ -4,6 +4,7 @@ let fruitData;
 // -----------------------------------------------------------------------------
 // #02. Create an async function so that the functions do not have to be 
 //      executed in a specific order ot be right or even complete (race).
+//      The async was suggested by VS Code. I had to look up what that meant.
 // -----------------------------------------------------------------------------
 async function populateDropdowns() {
     try {
@@ -52,10 +53,13 @@ function checkInputsValidity() {
     for (let i = 0; i < dropdowns.length; i++) {
         const quantity = parseFloat(quantities[i].value);
 
-        // any condition: qty is not a number, qty is less than zero, or value
-        // of dropdowns is empty.
+        // (any condition): qty is not a number, qty is less than zero, or value
+        // of dropdowns is empty, then isValid = false and the button doesn't
+        // work.
         if (isNaN(quantity) || quantity <= 0 || dropdowns[i].value === "") {
             isValid = false;
+            // I'm not sure, my console.log may never execute because I have 
+            // disabled the button. So, I'm thinking this addition is a Meh.
             console.log('The user must input a quantity > 0 and select a fruit in each form field combo to proceed.');
             break;
         }
@@ -105,6 +109,9 @@ function calculateNutrition() {
             // (push): add items to the selectedFruit array
             selectedItems.push({ name: selectedFruit.name, quantity });
 
+            // variable 
+            // += addition assignment: basically, take the formula on the right 
+            // and assign it to the variable on the left of the operator.
             totalCarbohydrates += selectedFruit.nutritions.carbohydrates * quantity;
             totalProtein += selectedFruit.nutritions.protein * quantity;
             totalFat += selectedFruit.nutritions.fat * quantity;
