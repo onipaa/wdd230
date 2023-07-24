@@ -1,4 +1,4 @@
-// #01. create a variable outside the functions to holdl fruitData.
+// #01. create a variable outside the functions to hold fruitData.
 let fruitData;
 
 // -----------------------------------------------------------------------------
